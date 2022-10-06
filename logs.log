@@ -7636,3 +7636,1297 @@ ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuou
                  SMOTE(k_neighbors=5, n_jobs=None, random_state=42,
                        sampling_strategy='auto'))],
          verbose=False)
+2022-10-05 19:47:36,727:INFO:PyCaret Supervised Module
+2022-10-05 19:47:36,759:INFO:ML Usecase: classification
+2022-10-05 19:47:36,759:INFO:version 2.3.10
+2022-10-05 19:47:36,759:INFO:Initializing setup()
+2022-10-05 19:47:36,759:INFO:setup(target=score, ml_usecase=classification, available_plots={'parameter': 'Hyperparameters', 'auc': 'AUC', 'confusion_matrix': 'Confusion Matrix', 'threshold': 'Threshold', 'pr': 'Precision Recall', 'error': 'Prediction Error', 'class_report': 'Class Report', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'calibration': 'Calibration Curve', 'vc': 'Validation Curve', 'dimension': 'Dimensions', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'boundary': 'Decision Boundary', 'lift': 'Lift Chart', 'gain': 'Gain Chart', 'tree': 'Decision Tree', 'ks': 'KS Statistic Plot'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=iterative, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=most_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=True, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=True, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=stratifiedkfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=42, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-10-05 19:47:36,759:INFO:Checking environment
+2022-10-05 19:47:36,760:INFO:python_version: 3.8.13
+2022-10-05 19:47:36,760:INFO:python_build: ('default', 'Mar 28 2022 06:59:08')
+2022-10-05 19:47:36,760:INFO:machine: AMD64
+2022-10-05 19:47:36,760:INFO:platform: Windows-10-10.0.19044-SP0
+2022-10-05 19:47:36,760:INFO:Memory: svmem(total=8470003712, available=997548032, percent=88.2, used=7472455680, free=997548032)
+2022-10-05 19:47:36,761:INFO:Physical Core: 2
+2022-10-05 19:47:36,761:INFO:Logical Core: 4
+2022-10-05 19:47:36,761:INFO:Checking libraries
+2022-10-05 19:47:36,761:INFO:pd==1.4.4
+2022-10-05 19:47:36,761:INFO:numpy==1.20.3
+2022-10-05 19:47:36,761:INFO:sklearn==0.23.2
+2022-10-05 19:47:36,761:INFO:lightgbm==3.3.2
+2022-10-05 19:47:36,763:WARNING:catboost not found
+2022-10-05 19:47:36,765:WARNING:xgboost not found
+2022-10-05 19:47:36,765:INFO:mlflow==1.29.0
+2022-10-05 19:47:36,765:INFO:Checking Exceptions
+2022-10-05 19:48:16,781:INFO:PyCaret Supervised Module
+2022-10-05 19:48:16,782:INFO:ML Usecase: classification
+2022-10-05 19:48:16,782:INFO:version 2.3.10
+2022-10-05 19:48:16,782:INFO:Initializing setup()
+2022-10-05 19:48:16,783:INFO:setup(target=review_score, ml_usecase=classification, available_plots={'parameter': 'Hyperparameters', 'auc': 'AUC', 'confusion_matrix': 'Confusion Matrix', 'threshold': 'Threshold', 'pr': 'Precision Recall', 'error': 'Prediction Error', 'class_report': 'Class Report', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'calibration': 'Calibration Curve', 'vc': 'Validation Curve', 'dimension': 'Dimensions', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'boundary': 'Decision Boundary', 'lift': 'Lift Chart', 'gain': 'Gain Chart', 'tree': 'Decision Tree', 'ks': 'KS Statistic Plot'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=iterative, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=most_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=True, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=True, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=stratifiedkfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=42, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-10-05 19:48:16,783:INFO:Checking environment
+2022-10-05 19:48:16,783:INFO:python_version: 3.8.13
+2022-10-05 19:48:16,783:INFO:python_build: ('default', 'Mar 28 2022 06:59:08')
+2022-10-05 19:48:16,784:INFO:machine: AMD64
+2022-10-05 19:48:16,784:INFO:platform: Windows-10-10.0.19044-SP0
+2022-10-05 19:48:16,784:INFO:Memory: svmem(total=8470003712, available=951402496, percent=88.8, used=7518601216, free=951402496)
+2022-10-05 19:48:16,784:INFO:Physical Core: 2
+2022-10-05 19:48:16,785:INFO:Logical Core: 4
+2022-10-05 19:48:16,785:INFO:Checking libraries
+2022-10-05 19:48:16,785:INFO:pd==1.4.4
+2022-10-05 19:48:16,785:INFO:numpy==1.20.3
+2022-10-05 19:48:16,785:INFO:sklearn==0.23.2
+2022-10-05 19:48:16,786:INFO:lightgbm==3.3.2
+2022-10-05 19:48:16,789:WARNING:catboost not found
+2022-10-05 19:48:16,792:WARNING:xgboost not found
+2022-10-05 19:48:16,793:INFO:mlflow==1.29.0
+2022-10-05 19:48:16,793:INFO:Checking Exceptions
+2022-10-05 19:48:16,793:INFO:Declaring global variables
+2022-10-05 19:48:16,794:INFO:USI: 9442
+2022-10-05 19:48:16,794:INFO:pycaret_globals: {'n_jobs_param', '_ml_usecase', 'fold_param', '_all_models', 'X_train', 'USI', 'fold_groups_param', 'pycaret_globals', 'html_param', '_all_models_internal', 'fix_imbalance_param', 'target_param', 'seed', 'imputation_regressor', 'master_model_container', 'fix_imbalance_method_param', 'fold_shuffle_param', 'fold_generator', '_all_metrics', 'transform_target_param', 'dashboard_logger', 'iterative_imputation_iters_param', 'imputation_classifier', '_gpu_n_jobs_param', '_available_plots', 'y_train', 'data_before_preprocess', 'log_plots_param', 'logging_param', 'X_test', 'y', 'create_model_container', 'display_container', 'stratify_param', 'exp_name_log', 'transform_target_method_param', 'prep_pipe', 'gpu_param', 'y_test', 'fold_groups_param_full', 'experiment__', '_internal_pipeline', 'X'}
+2022-10-05 19:48:16,794:INFO:Preparing display monitor
+2022-10-05 19:48:16,795:INFO:Preparing display monitor
+2022-10-05 19:48:16,932:INFO:Importing libraries
+2022-10-05 19:48:16,933:INFO:Copying data for preprocessing
+2022-10-05 19:48:17,021:INFO:Declaring preprocessing parameters
+2022-10-05 19:48:17,113:INFO:Setting up iterative imputation
+2022-10-05 19:48:17,454:WARNING:Couldn't import xgboost.XGBClassifier
+2022-10-05 19:48:17,456:WARNING:Couldn't import catboost.CatBoostClassifier
+2022-10-05 19:48:17,868:WARNING:Couldn't import xgboost.XGBRegressor
+2022-10-05 19:48:17,869:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-05 19:48:17,870:INFO:Creating preprocessing pipeline
+2022-10-05 19:48:18,980:INFO:Preprocessing pipeline created successfully
+2022-10-05 19:48:18,980:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-10-05 19:48:18,980:INFO:Creating global containers
+2022-10-05 19:48:18,982:INFO:Internal pipeline: Pipeline(memory=None,
+         steps=[('fix_imbalance',
+                 SMOTE(k_neighbors=5, n_jobs=None, random_state=42,
+                       sampling_strategy='auto'))],
+         verbose=False)
+2022-10-05 19:52:00,810:INFO:Initializing compare_models()
+2022-10-05 19:52:00,811:INFO:compare_models(include=None, fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, display=None, exclude=None)
+2022-10-05 19:52:00,811:INFO:Checking exceptions
+2022-10-05 19:52:00,835:INFO:Preparing display monitor
+2022-10-05 19:52:00,836:INFO:Preparing display monitor
+2022-10-05 19:52:00,942:INFO:Initializing Logistic Regression
+2022-10-05 19:52:00,942:INFO:Total runtime is 1.6641616821289062e-05 minutes
+2022-10-05 19:52:00,972:INFO:SubProcess create_model() called ==================================
+2022-10-05 19:52:01,020:INFO:Initializing create_model()
+2022-10-05 19:52:01,020:INFO:create_model(estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, experiment_custom_tags=None, add_to_model_list=True, probability_threshold=None, display=<pycaret.internal.Display.Display object at 0x000001F532C089D0>, return_train_score=False, kwargs={})
+2022-10-05 19:52:01,020:INFO:Checking exceptions
+2022-10-05 19:52:01,021:INFO:Importing libraries
+2022-10-05 19:52:01,021:INFO:Copying training dataset
+2022-10-05 19:52:01,089:INFO:Defining folds
+2022-10-05 19:52:01,090:INFO:Declaring metric variables
+2022-10-05 19:52:01,112:INFO:Importing untrained model
+2022-10-05 19:52:01,146:INFO:Logistic Regression Imported succesfully
+2022-10-05 19:52:01,191:INFO:Starting cross validation
+2022-10-05 19:52:01,193:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-10-05 19:53:12,839:WARNING:create_model() for lr raised an exception or returned all 0.0, trying without fit_kwargs:
+2022-10-05 19:53:12,983:WARNING:Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 935, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_parallel_backends.py", line 542, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\concurrent\futures\_base.py", line 439, in result
+    self._condition.wait(timeout)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\threading.py", line 302, in wait
+    waiter.acquire()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 1056, in __call__
+    self.retrieve()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 957, in retrieve
+    backend.abort_everything(ensure_ready=ensure_ready)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_parallel_backends.py", line 561, in abort_everything
+    self._workers.terminate(kill_workers=True)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 86, in terminate
+    self._temp_folder_manager._unregister_temporary_resources()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 635, in _unregister_temporary_resources
+    self._unregister_temporary_resources(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 640, in _unregister_temporary_resources
+    resource_tracker.unregister(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 195, in unregister
+    self.ensure_running()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 102, in ensure_running
+    if self._check_alive():
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 182, in _check_alive
+    self._send('PROBE', '', '')
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 209, in _send
+    nbytes = os.write(self._fd, msg)
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 2203, in compare_models
+    model, model_fit_time = create_model_supervised(**create_model_args)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 3200, in create_model_supervised
+    scores = cross_validate(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\utils\validation.py", line 72, in inner_f
+    return f(**kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\model_selection\_validation.py", line 242, in cross_validate
+    scores = parallel(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 1066, in __call__
+    self._terminate_backend()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 759, in _terminate_backend
+    self._backend.terminate()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_parallel_backends.py", line 551, in terminate
+    self._workers._temp_folder_manager._unlink_temporary_resources(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 624, in _unlink_temporary_resources
+    resource_tracker.maybe_unlink(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 200, in maybe_unlink
+    self.ensure_running()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 102, in ensure_running
+    if self._check_alive():
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 182, in _check_alive
+    self._send('PROBE', '', '')
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 209, in _send
+    nbytes = os.write(self._fd, msg)
+OSError: [Errno 22] Invalid argument
+
+2022-10-05 19:53:13,007:INFO:Initializing create_model()
+2022-10-05 19:53:13,008:INFO:create_model(estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, experiment_custom_tags=None, add_to_model_list=True, probability_threshold=None, display=<pycaret.internal.Display.Display object at 0x000001F532C089D0>, return_train_score=False, kwargs={})
+2022-10-05 19:53:13,008:INFO:Checking exceptions
+2022-10-05 19:53:13,008:INFO:Importing libraries
+2022-10-05 19:53:13,008:INFO:Copying training dataset
+2022-10-05 19:53:13,053:INFO:Defining folds
+2022-10-05 19:53:13,054:INFO:Declaring metric variables
+2022-10-05 19:53:13,074:INFO:Importing untrained model
+2022-10-05 19:53:13,103:INFO:Logistic Regression Imported succesfully
+2022-10-05 19:53:13,157:INFO:Starting cross validation
+2022-10-05 19:53:13,160:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-10-05 19:53:13,163:ERROR:create_model() for lr raised an exception or returned all 0.0:
+2022-10-05 19:53:13,169:ERROR:Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 935, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_parallel_backends.py", line 542, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\concurrent\futures\_base.py", line 439, in result
+    self._condition.wait(timeout)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\threading.py", line 302, in wait
+    waiter.acquire()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 1056, in __call__
+    self.retrieve()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 957, in retrieve
+    backend.abort_everything(ensure_ready=ensure_ready)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_parallel_backends.py", line 561, in abort_everything
+    self._workers.terminate(kill_workers=True)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 86, in terminate
+    self._temp_folder_manager._unregister_temporary_resources()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 635, in _unregister_temporary_resources
+    self._unregister_temporary_resources(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 640, in _unregister_temporary_resources
+    resource_tracker.unregister(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 195, in unregister
+    self.ensure_running()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 102, in ensure_running
+    if self._check_alive():
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 182, in _check_alive
+    self._send('PROBE', '', '')
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 209, in _send
+    nbytes = os.write(self._fd, msg)
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 2203, in compare_models
+    model, model_fit_time = create_model_supervised(**create_model_args)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 3200, in create_model_supervised
+    scores = cross_validate(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\utils\validation.py", line 72, in inner_f
+    return f(**kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\model_selection\_validation.py", line 242, in cross_validate
+    scores = parallel(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 1066, in __call__
+    self._terminate_backend()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 759, in _terminate_backend
+    self._backend.terminate()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_parallel_backends.py", line 551, in terminate
+    self._workers._temp_folder_manager._unlink_temporary_resources(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 624, in _unlink_temporary_resources
+    resource_tracker.maybe_unlink(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 200, in maybe_unlink
+    self.ensure_running()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 102, in ensure_running
+    if self._check_alive():
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 182, in _check_alive
+    self._send('PROBE', '', '')
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 209, in _send
+    nbytes = os.write(self._fd, msg)
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 2212, in compare_models
+    model, model_fit_time = create_model_supervised(**create_model_args)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 3200, in create_model_supervised
+    scores = cross_validate(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\utils\validation.py", line 72, in inner_f
+    return f(**kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\model_selection\_validation.py", line 242, in cross_validate
+    scores = parallel(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 968, in __call__
+    n_jobs = self._initialize_backend()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 735, in _initialize_backend
+    n_jobs = self._backend.configure(n_jobs=self.n_jobs, parallel=self,
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_parallel_backends.py", line 494, in configure
+    self._workers = get_memmapping_executor(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 20, in get_memmapping_executor
+    return MemmappingExecutor.get_memmapping_executor(n_jobs, **kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 42, in get_memmapping_executor
+    manager = TemporaryResourcesManager(temp_folder)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 531, in __init__
+    self.set_current_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 535, in set_current_context
+    self.register_new_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 560, in register_new_context
+    self.register_folder_finalizer(new_folder_path, context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 590, in register_folder_finalizer
+    resource_tracker.register(pool_subfolder, "folder")
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 190, in register
+    self.ensure_running()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 102, in ensure_running
+    if self._check_alive():
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 182, in _check_alive
+    self._send('PROBE', '', '')
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 209, in _send
+    nbytes = os.write(self._fd, msg)
+OSError: [Errno 22] Invalid argument
+
+2022-10-05 19:53:13,236:INFO:Initializing K Neighbors Classifier
+2022-10-05 19:53:13,236:INFO:Total runtime is 1.204925831158956 minutes
+2022-10-05 19:53:13,262:INFO:SubProcess create_model() called ==================================
+2022-10-05 19:53:13,263:INFO:Initializing create_model()
+2022-10-05 19:53:13,264:INFO:create_model(estimator=knn, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, experiment_custom_tags=None, add_to_model_list=True, probability_threshold=None, display=<pycaret.internal.Display.Display object at 0x000001F532C089D0>, return_train_score=False, kwargs={})
+2022-10-05 19:53:13,264:INFO:Checking exceptions
+2022-10-05 19:53:13,265:INFO:Importing libraries
+2022-10-05 19:53:13,265:INFO:Copying training dataset
+2022-10-05 19:53:13,311:INFO:Defining folds
+2022-10-05 19:53:13,312:INFO:Declaring metric variables
+2022-10-05 19:53:13,330:INFO:Importing untrained model
+2022-10-05 19:53:13,350:INFO:K Neighbors Classifier Imported succesfully
+2022-10-05 19:53:13,389:INFO:Starting cross validation
+2022-10-05 19:53:13,390:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-10-05 19:53:13,394:WARNING:create_model() for knn raised an exception or returned all 0.0, trying without fit_kwargs:
+2022-10-05 19:53:13,396:WARNING:Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 2203, in compare_models
+    model, model_fit_time = create_model_supervised(**create_model_args)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 3200, in create_model_supervised
+    scores = cross_validate(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\utils\validation.py", line 72, in inner_f
+    return f(**kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\model_selection\_validation.py", line 242, in cross_validate
+    scores = parallel(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 968, in __call__
+    n_jobs = self._initialize_backend()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 735, in _initialize_backend
+    n_jobs = self._backend.configure(n_jobs=self.n_jobs, parallel=self,
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_parallel_backends.py", line 494, in configure
+    self._workers = get_memmapping_executor(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 20, in get_memmapping_executor
+    return MemmappingExecutor.get_memmapping_executor(n_jobs, **kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 42, in get_memmapping_executor
+    manager = TemporaryResourcesManager(temp_folder)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 531, in __init__
+    self.set_current_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 535, in set_current_context
+    self.register_new_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 560, in register_new_context
+    self.register_folder_finalizer(new_folder_path, context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 590, in register_folder_finalizer
+    resource_tracker.register(pool_subfolder, "folder")
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 190, in register
+    self.ensure_running()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 102, in ensure_running
+    if self._check_alive():
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 182, in _check_alive
+    self._send('PROBE', '', '')
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 209, in _send
+    nbytes = os.write(self._fd, msg)
+OSError: [Errno 22] Invalid argument
+
+2022-10-05 19:53:13,397:INFO:Initializing create_model()
+2022-10-05 19:53:13,397:INFO:create_model(estimator=knn, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, experiment_custom_tags=None, add_to_model_list=True, probability_threshold=None, display=<pycaret.internal.Display.Display object at 0x000001F532C089D0>, return_train_score=False, kwargs={})
+2022-10-05 19:53:13,397:INFO:Checking exceptions
+2022-10-05 19:53:13,398:INFO:Importing libraries
+2022-10-05 19:53:13,398:INFO:Copying training dataset
+2022-10-05 19:53:13,436:INFO:Defining folds
+2022-10-05 19:53:13,436:INFO:Declaring metric variables
+2022-10-05 19:53:13,456:INFO:Importing untrained model
+2022-10-05 19:53:13,479:INFO:K Neighbors Classifier Imported succesfully
+2022-10-05 19:53:13,520:INFO:Starting cross validation
+2022-10-05 19:53:13,521:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-10-05 19:53:13,524:ERROR:create_model() for knn raised an exception or returned all 0.0:
+2022-10-05 19:53:13,529:ERROR:Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 2203, in compare_models
+    model, model_fit_time = create_model_supervised(**create_model_args)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 3200, in create_model_supervised
+    scores = cross_validate(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\utils\validation.py", line 72, in inner_f
+    return f(**kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\model_selection\_validation.py", line 242, in cross_validate
+    scores = parallel(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 968, in __call__
+    n_jobs = self._initialize_backend()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 735, in _initialize_backend
+    n_jobs = self._backend.configure(n_jobs=self.n_jobs, parallel=self,
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_parallel_backends.py", line 494, in configure
+    self._workers = get_memmapping_executor(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 20, in get_memmapping_executor
+    return MemmappingExecutor.get_memmapping_executor(n_jobs, **kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 42, in get_memmapping_executor
+    manager = TemporaryResourcesManager(temp_folder)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 531, in __init__
+    self.set_current_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 535, in set_current_context
+    self.register_new_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 560, in register_new_context
+    self.register_folder_finalizer(new_folder_path, context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 590, in register_folder_finalizer
+    resource_tracker.register(pool_subfolder, "folder")
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 190, in register
+    self.ensure_running()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 102, in ensure_running
+    if self._check_alive():
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 182, in _check_alive
+    self._send('PROBE', '', '')
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 209, in _send
+    nbytes = os.write(self._fd, msg)
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 2212, in compare_models
+    model, model_fit_time = create_model_supervised(**create_model_args)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 3200, in create_model_supervised
+    scores = cross_validate(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\utils\validation.py", line 72, in inner_f
+    return f(**kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\model_selection\_validation.py", line 242, in cross_validate
+    scores = parallel(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 968, in __call__
+    n_jobs = self._initialize_backend()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 735, in _initialize_backend
+    n_jobs = self._backend.configure(n_jobs=self.n_jobs, parallel=self,
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_parallel_backends.py", line 494, in configure
+    self._workers = get_memmapping_executor(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 20, in get_memmapping_executor
+    return MemmappingExecutor.get_memmapping_executor(n_jobs, **kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 42, in get_memmapping_executor
+    manager = TemporaryResourcesManager(temp_folder)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 531, in __init__
+    self.set_current_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 535, in set_current_context
+    self.register_new_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 560, in register_new_context
+    self.register_folder_finalizer(new_folder_path, context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 590, in register_folder_finalizer
+    resource_tracker.register(pool_subfolder, "folder")
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 190, in register
+    self.ensure_running()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 102, in ensure_running
+    if self._check_alive():
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 182, in _check_alive
+    self._send('PROBE', '', '')
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 209, in _send
+    nbytes = os.write(self._fd, msg)
+OSError: [Errno 22] Invalid argument
+
+2022-10-05 19:53:13,590:INFO:Initializing Naive Bayes
+2022-10-05 19:53:13,590:INFO:Total runtime is 1.2108214259147645 minutes
+2022-10-05 19:53:13,613:INFO:SubProcess create_model() called ==================================
+2022-10-05 19:53:13,614:INFO:Initializing create_model()
+2022-10-05 19:53:13,614:INFO:create_model(estimator=nb, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, experiment_custom_tags=None, add_to_model_list=True, probability_threshold=None, display=<pycaret.internal.Display.Display object at 0x000001F532C089D0>, return_train_score=False, kwargs={})
+2022-10-05 19:53:13,614:INFO:Checking exceptions
+2022-10-05 19:53:13,615:INFO:Importing libraries
+2022-10-05 19:53:13,615:INFO:Copying training dataset
+2022-10-05 19:53:13,652:INFO:Defining folds
+2022-10-05 19:53:13,652:INFO:Declaring metric variables
+2022-10-05 19:53:13,672:INFO:Importing untrained model
+2022-10-05 19:53:13,692:INFO:Naive Bayes Imported succesfully
+2022-10-05 19:53:13,722:INFO:Starting cross validation
+2022-10-05 19:53:13,723:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-10-05 19:53:13,725:WARNING:create_model() for nb raised an exception or returned all 0.0, trying without fit_kwargs:
+2022-10-05 19:53:13,729:WARNING:Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 2203, in compare_models
+    model, model_fit_time = create_model_supervised(**create_model_args)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 3200, in create_model_supervised
+    scores = cross_validate(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\utils\validation.py", line 72, in inner_f
+    return f(**kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\model_selection\_validation.py", line 242, in cross_validate
+    scores = parallel(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 968, in __call__
+    n_jobs = self._initialize_backend()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 735, in _initialize_backend
+    n_jobs = self._backend.configure(n_jobs=self.n_jobs, parallel=self,
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_parallel_backends.py", line 494, in configure
+    self._workers = get_memmapping_executor(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 20, in get_memmapping_executor
+    return MemmappingExecutor.get_memmapping_executor(n_jobs, **kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 42, in get_memmapping_executor
+    manager = TemporaryResourcesManager(temp_folder)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 531, in __init__
+    self.set_current_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 535, in set_current_context
+    self.register_new_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 560, in register_new_context
+    self.register_folder_finalizer(new_folder_path, context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 590, in register_folder_finalizer
+    resource_tracker.register(pool_subfolder, "folder")
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 190, in register
+    self.ensure_running()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 102, in ensure_running
+    if self._check_alive():
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 182, in _check_alive
+    self._send('PROBE', '', '')
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 209, in _send
+    nbytes = os.write(self._fd, msg)
+OSError: [Errno 22] Invalid argument
+
+2022-10-05 19:53:13,729:INFO:Initializing create_model()
+2022-10-05 19:53:13,729:INFO:create_model(estimator=nb, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, experiment_custom_tags=None, add_to_model_list=True, probability_threshold=None, display=<pycaret.internal.Display.Display object at 0x000001F532C089D0>, return_train_score=False, kwargs={})
+2022-10-05 19:53:13,730:INFO:Checking exceptions
+2022-10-05 19:53:13,730:INFO:Importing libraries
+2022-10-05 19:53:13,730:INFO:Copying training dataset
+2022-10-05 19:53:13,762:INFO:Defining folds
+2022-10-05 19:53:13,763:INFO:Declaring metric variables
+2022-10-05 19:53:13,789:INFO:Importing untrained model
+2022-10-05 19:53:13,821:INFO:Naive Bayes Imported succesfully
+2022-10-05 19:53:13,882:INFO:Starting cross validation
+2022-10-05 19:53:13,884:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-10-05 19:53:13,889:ERROR:create_model() for nb raised an exception or returned all 0.0:
+2022-10-05 19:53:13,892:ERROR:Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 2203, in compare_models
+    model, model_fit_time = create_model_supervised(**create_model_args)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 3200, in create_model_supervised
+    scores = cross_validate(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\utils\validation.py", line 72, in inner_f
+    return f(**kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\model_selection\_validation.py", line 242, in cross_validate
+    scores = parallel(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 968, in __call__
+    n_jobs = self._initialize_backend()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 735, in _initialize_backend
+    n_jobs = self._backend.configure(n_jobs=self.n_jobs, parallel=self,
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_parallel_backends.py", line 494, in configure
+    self._workers = get_memmapping_executor(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 20, in get_memmapping_executor
+    return MemmappingExecutor.get_memmapping_executor(n_jobs, **kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 42, in get_memmapping_executor
+    manager = TemporaryResourcesManager(temp_folder)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 531, in __init__
+    self.set_current_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 535, in set_current_context
+    self.register_new_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 560, in register_new_context
+    self.register_folder_finalizer(new_folder_path, context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 590, in register_folder_finalizer
+    resource_tracker.register(pool_subfolder, "folder")
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 190, in register
+    self.ensure_running()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 102, in ensure_running
+    if self._check_alive():
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 182, in _check_alive
+    self._send('PROBE', '', '')
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 209, in _send
+    nbytes = os.write(self._fd, msg)
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 2212, in compare_models
+    model, model_fit_time = create_model_supervised(**create_model_args)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 3200, in create_model_supervised
+    scores = cross_validate(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\utils\validation.py", line 72, in inner_f
+    return f(**kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\model_selection\_validation.py", line 242, in cross_validate
+    scores = parallel(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 968, in __call__
+    n_jobs = self._initialize_backend()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 735, in _initialize_backend
+    n_jobs = self._backend.configure(n_jobs=self.n_jobs, parallel=self,
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_parallel_backends.py", line 494, in configure
+    self._workers = get_memmapping_executor(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 20, in get_memmapping_executor
+    return MemmappingExecutor.get_memmapping_executor(n_jobs, **kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 42, in get_memmapping_executor
+    manager = TemporaryResourcesManager(temp_folder)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 531, in __init__
+    self.set_current_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 535, in set_current_context
+    self.register_new_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 560, in register_new_context
+    self.register_folder_finalizer(new_folder_path, context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 590, in register_folder_finalizer
+    resource_tracker.register(pool_subfolder, "folder")
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 190, in register
+    self.ensure_running()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 102, in ensure_running
+    if self._check_alive():
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 182, in _check_alive
+    self._send('PROBE', '', '')
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 209, in _send
+    nbytes = os.write(self._fd, msg)
+OSError: [Errno 22] Invalid argument
+
+2022-10-05 19:53:13,966:INFO:Initializing Decision Tree Classifier
+2022-10-05 19:53:13,966:INFO:Total runtime is 1.217084268728892 minutes
+2022-10-05 19:53:14,001:INFO:SubProcess create_model() called ==================================
+2022-10-05 19:53:14,002:INFO:Initializing create_model()
+2022-10-05 19:53:14,003:INFO:create_model(estimator=dt, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, experiment_custom_tags=None, add_to_model_list=True, probability_threshold=None, display=<pycaret.internal.Display.Display object at 0x000001F532C089D0>, return_train_score=False, kwargs={})
+2022-10-05 19:53:14,003:INFO:Checking exceptions
+2022-10-05 19:53:14,003:INFO:Importing libraries
+2022-10-05 19:53:14,003:INFO:Copying training dataset
+2022-10-05 19:53:14,049:INFO:Defining folds
+2022-10-05 19:53:14,049:INFO:Declaring metric variables
+2022-10-05 19:53:14,069:INFO:Importing untrained model
+2022-10-05 19:53:14,095:INFO:Decision Tree Classifier Imported succesfully
+2022-10-05 19:53:14,139:INFO:Starting cross validation
+2022-10-05 19:53:14,140:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-10-05 19:53:14,142:WARNING:create_model() for dt raised an exception or returned all 0.0, trying without fit_kwargs:
+2022-10-05 19:53:14,146:WARNING:Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 2203, in compare_models
+    model, model_fit_time = create_model_supervised(**create_model_args)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 3200, in create_model_supervised
+    scores = cross_validate(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\utils\validation.py", line 72, in inner_f
+    return f(**kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\model_selection\_validation.py", line 242, in cross_validate
+    scores = parallel(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 968, in __call__
+    n_jobs = self._initialize_backend()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 735, in _initialize_backend
+    n_jobs = self._backend.configure(n_jobs=self.n_jobs, parallel=self,
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_parallel_backends.py", line 494, in configure
+    self._workers = get_memmapping_executor(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 20, in get_memmapping_executor
+    return MemmappingExecutor.get_memmapping_executor(n_jobs, **kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 42, in get_memmapping_executor
+    manager = TemporaryResourcesManager(temp_folder)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 531, in __init__
+    self.set_current_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 535, in set_current_context
+    self.register_new_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 560, in register_new_context
+    self.register_folder_finalizer(new_folder_path, context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 590, in register_folder_finalizer
+    resource_tracker.register(pool_subfolder, "folder")
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 190, in register
+    self.ensure_running()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 102, in ensure_running
+    if self._check_alive():
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 182, in _check_alive
+    self._send('PROBE', '', '')
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 209, in _send
+    nbytes = os.write(self._fd, msg)
+OSError: [Errno 22] Invalid argument
+
+2022-10-05 19:53:14,147:INFO:Initializing create_model()
+2022-10-05 19:53:14,147:INFO:create_model(estimator=dt, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, experiment_custom_tags=None, add_to_model_list=True, probability_threshold=None, display=<pycaret.internal.Display.Display object at 0x000001F532C089D0>, return_train_score=False, kwargs={})
+2022-10-05 19:53:14,147:INFO:Checking exceptions
+2022-10-05 19:53:14,147:INFO:Importing libraries
+2022-10-05 19:53:14,147:INFO:Copying training dataset
+2022-10-05 19:53:14,184:INFO:Defining folds
+2022-10-05 19:53:14,184:INFO:Declaring metric variables
+2022-10-05 19:53:14,209:INFO:Importing untrained model
+2022-10-05 19:53:14,231:INFO:Decision Tree Classifier Imported succesfully
+2022-10-05 19:53:14,290:INFO:Starting cross validation
+2022-10-05 19:53:14,292:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-10-05 19:53:14,296:ERROR:create_model() for dt raised an exception or returned all 0.0:
+2022-10-05 19:53:14,299:ERROR:Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 2203, in compare_models
+    model, model_fit_time = create_model_supervised(**create_model_args)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 3200, in create_model_supervised
+    scores = cross_validate(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\utils\validation.py", line 72, in inner_f
+    return f(**kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\model_selection\_validation.py", line 242, in cross_validate
+    scores = parallel(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 968, in __call__
+    n_jobs = self._initialize_backend()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 735, in _initialize_backend
+    n_jobs = self._backend.configure(n_jobs=self.n_jobs, parallel=self,
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_parallel_backends.py", line 494, in configure
+    self._workers = get_memmapping_executor(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 20, in get_memmapping_executor
+    return MemmappingExecutor.get_memmapping_executor(n_jobs, **kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 42, in get_memmapping_executor
+    manager = TemporaryResourcesManager(temp_folder)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 531, in __init__
+    self.set_current_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 535, in set_current_context
+    self.register_new_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 560, in register_new_context
+    self.register_folder_finalizer(new_folder_path, context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 590, in register_folder_finalizer
+    resource_tracker.register(pool_subfolder, "folder")
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 190, in register
+    self.ensure_running()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 102, in ensure_running
+    if self._check_alive():
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 182, in _check_alive
+    self._send('PROBE', '', '')
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 209, in _send
+    nbytes = os.write(self._fd, msg)
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 2212, in compare_models
+    model, model_fit_time = create_model_supervised(**create_model_args)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 3200, in create_model_supervised
+    scores = cross_validate(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\utils\validation.py", line 72, in inner_f
+    return f(**kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\model_selection\_validation.py", line 242, in cross_validate
+    scores = parallel(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 968, in __call__
+    n_jobs = self._initialize_backend()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 735, in _initialize_backend
+    n_jobs = self._backend.configure(n_jobs=self.n_jobs, parallel=self,
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_parallel_backends.py", line 494, in configure
+    self._workers = get_memmapping_executor(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 20, in get_memmapping_executor
+    return MemmappingExecutor.get_memmapping_executor(n_jobs, **kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 42, in get_memmapping_executor
+    manager = TemporaryResourcesManager(temp_folder)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 531, in __init__
+    self.set_current_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 535, in set_current_context
+    self.register_new_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 560, in register_new_context
+    self.register_folder_finalizer(new_folder_path, context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 590, in register_folder_finalizer
+    resource_tracker.register(pool_subfolder, "folder")
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 190, in register
+    self.ensure_running()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 102, in ensure_running
+    if self._check_alive():
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 182, in _check_alive
+    self._send('PROBE', '', '')
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 209, in _send
+    nbytes = os.write(self._fd, msg)
+OSError: [Errno 22] Invalid argument
+
+2022-10-05 19:53:14,371:INFO:Initializing SVM - Linear Kernel
+2022-10-05 19:53:14,371:INFO:Total runtime is 1.2238369385401409 minutes
+2022-10-05 19:53:14,398:INFO:SubProcess create_model() called ==================================
+2022-10-05 19:53:14,399:INFO:Initializing create_model()
+2022-10-05 19:53:14,400:INFO:create_model(estimator=svm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, experiment_custom_tags=None, add_to_model_list=True, probability_threshold=None, display=<pycaret.internal.Display.Display object at 0x000001F532C089D0>, return_train_score=False, kwargs={})
+2022-10-05 19:53:14,400:INFO:Checking exceptions
+2022-10-05 19:53:14,400:INFO:Importing libraries
+2022-10-05 19:53:14,401:INFO:Copying training dataset
+2022-10-05 19:53:14,437:INFO:Defining folds
+2022-10-05 19:53:14,438:INFO:Declaring metric variables
+2022-10-05 19:53:14,456:INFO:Importing untrained model
+2022-10-05 19:53:14,479:INFO:SVM - Linear Kernel Imported succesfully
+2022-10-05 19:53:14,515:INFO:Starting cross validation
+2022-10-05 19:53:14,517:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-10-05 19:53:14,519:WARNING:create_model() for svm raised an exception or returned all 0.0, trying without fit_kwargs:
+2022-10-05 19:53:14,522:WARNING:Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 2203, in compare_models
+    model, model_fit_time = create_model_supervised(**create_model_args)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\pycaret\internal\tabular.py", line 3200, in create_model_supervised
+    scores = cross_validate(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\utils\validation.py", line 72, in inner_f
+    return f(**kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\sklearn\model_selection\_validation.py", line 242, in cross_validate
+    scores = parallel(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 968, in __call__
+    n_jobs = self._initialize_backend()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\parallel.py", line 735, in _initialize_backend
+    n_jobs = self._backend.configure(n_jobs=self.n_jobs, parallel=self,
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_parallel_backends.py", line 494, in configure
+    self._workers = get_memmapping_executor(
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 20, in get_memmapping_executor
+    return MemmappingExecutor.get_memmapping_executor(n_jobs, **kwargs)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\executor.py", line 42, in get_memmapping_executor
+    manager = TemporaryResourcesManager(temp_folder)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 531, in __init__
+    self.set_current_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 535, in set_current_context
+    self.register_new_context(context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 560, in register_new_context
+    self.register_folder_finalizer(new_folder_path, context_id)
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\_memmapping_reducer.py", line 590, in register_folder_finalizer
+    resource_tracker.register(pool_subfolder, "folder")
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 190, in register
+    self.ensure_running()
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 102, in ensure_running
+    if self._check_alive():
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 182, in _check_alive
+    self._send('PROBE', '', '')
+  File "C:\ProgramData\Anaconda3\envs\pycaret\lib\site-packages\joblib\externals\loky\backend\resource_tracker.py", line 209, in _send
+    nbytes = os.write(self._fd, msg)
+OSError: [Errno 22] Invalid argument
+
+2022-10-05 19:53:14,523:INFO:Initializing create_model()
+2022-10-05 19:53:14,523:INFO:create_model(estimator=svm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, experiment_custom_tags=None, add_to_model_list=True, probability_threshold=None, display=<pycaret.internal.Display.Display object at 0x000001F532C089D0>, return_train_score=False, kwargs={})
+2022-10-05 19:53:14,523:INFO:Checking exceptions
+2022-10-05 19:53:14,523:INFO:Importing libraries
+2022-10-05 19:53:14,524:INFO:Copying training dataset
+2022-10-05 19:53:14,560:INFO:Defining folds
+2022-10-05 19:53:14,560:INFO:Declaring metric variables
+2022-10-05 19:53:14,581:INFO:Importing untrained model
+2022-10-05 19:53:14,609:INFO:SVM - Linear Kernel Imported succesfully
+2022-10-05 19:54:11,035:INFO:PyCaret Supervised Module
+2022-10-05 19:54:11,037:INFO:ML Usecase: classification
+2022-10-05 19:54:11,038:INFO:version 2.3.10
+2022-10-05 19:54:11,038:INFO:Initializing setup()
+2022-10-05 19:54:11,039:INFO:setup(target=review_score, ml_usecase=classification, available_plots={'parameter': 'Hyperparameters', 'auc': 'AUC', 'confusion_matrix': 'Confusion Matrix', 'threshold': 'Threshold', 'pr': 'Precision Recall', 'error': 'Prediction Error', 'class_report': 'Class Report', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'calibration': 'Calibration Curve', 'vc': 'Validation Curve', 'dimension': 'Dimensions', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'boundary': 'Decision Boundary', 'lift': 'Lift Chart', 'gain': 'Gain Chart', 'tree': 'Decision Tree', 'ks': 'KS Statistic Plot'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=iterative, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=most_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=True, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=True, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=stratifiedkfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=42, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-10-05 19:54:11,039:INFO:Checking environment
+2022-10-05 19:54:11,039:INFO:python_version: 3.8.13
+2022-10-05 19:54:11,039:INFO:python_build: ('default', 'Mar 28 2022 06:59:08')
+2022-10-05 19:54:11,040:INFO:machine: AMD64
+2022-10-05 19:54:11,040:INFO:platform: Windows-10-10.0.19044-SP0
+2022-10-05 19:54:11,040:INFO:Memory: svmem(total=8470003712, available=2591735808, percent=69.4, used=5878267904, free=2591735808)
+2022-10-05 19:54:11,040:INFO:Physical Core: 2
+2022-10-05 19:54:11,040:INFO:Logical Core: 4
+2022-10-05 19:54:11,040:INFO:Checking libraries
+2022-10-05 19:54:11,040:INFO:pd==1.4.4
+2022-10-05 19:54:11,040:INFO:numpy==1.20.3
+2022-10-05 19:54:11,040:INFO:sklearn==0.23.2
+2022-10-05 19:54:11,041:INFO:lightgbm==3.3.2
+2022-10-05 19:54:11,043:WARNING:catboost not found
+2022-10-05 19:54:11,045:WARNING:xgboost not found
+2022-10-05 19:54:11,046:INFO:mlflow==1.29.0
+2022-10-05 19:54:11,046:INFO:Checking Exceptions
+2022-10-05 19:54:11,046:INFO:Declaring global variables
+2022-10-05 19:54:11,046:INFO:USI: 323a
+2022-10-05 19:54:11,046:INFO:pycaret_globals: {'_all_metrics', 'y_test', 'logging_param', 'display_container', 'y_train', 'X', '_gpu_n_jobs_param', 'fix_imbalance_method_param', '_all_models', '_available_plots', 'fix_imbalance_param', 'seed', 'imputation_regressor', 'prep_pipe', 'stratify_param', 'imputation_classifier', '_ml_usecase', 'log_plots_param', 'experiment__', 'dashboard_logger', 'n_jobs_param', 'fold_param', 'fold_generator', 'fold_groups_param', 'create_model_container', '_internal_pipeline', 'USI', 'X_test', 'target_param', 'transform_target_param', 'fold_shuffle_param', 'gpu_param', '_all_models_internal', 'X_train', 'exp_name_log', 'data_before_preprocess', 'iterative_imputation_iters_param', 'y', 'fold_groups_param_full', 'transform_target_method_param', 'master_model_container', 'html_param', 'pycaret_globals'}
+2022-10-05 19:54:11,047:INFO:Preparing display monitor
+2022-10-05 19:54:11,047:INFO:Preparing display monitor
+2022-10-05 19:54:11,092:INFO:Importing libraries
+2022-10-05 19:54:11,093:INFO:Copying data for preprocessing
+2022-10-05 19:54:11,155:INFO:Declaring preprocessing parameters
+2022-10-05 19:54:11,235:INFO:Setting up iterative imputation
+2022-10-05 19:54:12,113:WARNING:Couldn't import xgboost.XGBClassifier
+2022-10-05 19:54:12,116:WARNING:Couldn't import catboost.CatBoostClassifier
+2022-10-05 19:54:12,611:WARNING:Couldn't import xgboost.XGBRegressor
+2022-10-05 19:54:12,613:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-05 19:54:12,614:INFO:Creating preprocessing pipeline
+2022-10-05 19:54:13,800:INFO:Preprocessing pipeline created successfully
+2022-10-05 19:54:13,801:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-10-05 19:54:13,801:INFO:Creating global containers
+2022-10-05 19:54:13,820:INFO:Internal pipeline: Pipeline(memory=None,
+         steps=[('fix_imbalance',
+                 SMOTE(k_neighbors=5, n_jobs=None, random_state=42,
+                       sampling_strategy='auto'))],
+         verbose=False)
+2022-10-05 19:55:35,010:INFO:PyCaret Supervised Module
+2022-10-05 19:55:35,012:INFO:ML Usecase: classification
+2022-10-05 19:55:35,012:INFO:version 2.3.10
+2022-10-05 19:55:35,013:INFO:Initializing setup()
+2022-10-05 19:55:35,013:INFO:setup(target=review_score, ml_usecase=classification, available_plots={'parameter': 'Hyperparameters', 'auc': 'AUC', 'confusion_matrix': 'Confusion Matrix', 'threshold': 'Threshold', 'pr': 'Precision Recall', 'error': 'Prediction Error', 'class_report': 'Class Report', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'calibration': 'Calibration Curve', 'vc': 'Validation Curve', 'dimension': 'Dimensions', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'boundary': 'Decision Boundary', 'lift': 'Lift Chart', 'gain': 'Gain Chart', 'tree': 'Decision Tree', 'ks': 'KS Statistic Plot'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=iterative, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=most_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=True, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=True, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=stratifiedkfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=42, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-10-05 19:55:35,013:INFO:Checking environment
+2022-10-05 19:55:35,014:INFO:python_version: 3.8.13
+2022-10-05 19:55:35,014:INFO:python_build: ('default', 'Mar 28 2022 06:59:08')
+2022-10-05 19:55:35,014:INFO:machine: AMD64
+2022-10-05 19:55:35,014:INFO:platform: Windows-10-10.0.19044-SP0
+2022-10-05 19:55:35,015:INFO:Memory: svmem(total=8470003712, available=2545274880, percent=69.9, used=5924728832, free=2545274880)
+2022-10-05 19:55:35,015:INFO:Physical Core: 2
+2022-10-05 19:55:35,015:INFO:Logical Core: 4
+2022-10-05 19:55:35,015:INFO:Checking libraries
+2022-10-05 19:55:35,015:INFO:pd==1.4.4
+2022-10-05 19:55:35,015:INFO:numpy==1.20.3
+2022-10-05 19:55:35,016:INFO:sklearn==0.23.2
+2022-10-05 19:55:35,016:INFO:lightgbm==3.3.2
+2022-10-05 19:55:35,019:WARNING:catboost not found
+2022-10-05 19:55:35,022:WARNING:xgboost not found
+2022-10-05 19:55:35,022:INFO:mlflow==1.29.0
+2022-10-05 19:55:35,022:INFO:Checking Exceptions
+2022-10-05 19:55:35,023:INFO:Declaring global variables
+2022-10-05 19:55:35,023:INFO:USI: a681
+2022-10-05 19:55:35,023:INFO:pycaret_globals: {'_all_models_internal', 'experiment__', '_internal_pipeline', 'transform_target_method_param', 'create_model_container', 'iterative_imputation_iters_param', 'transform_target_param', 'dashboard_logger', '_all_metrics', 'X_test', 'prep_pipe', 'gpu_param', 'master_model_container', 'y_test', 'y_train', 'seed', 'data_before_preprocess', 'X_train', 'fix_imbalance_param', 'stratify_param', 'target_param', 'fold_groups_param_full', 'display_container', 'fold_generator', 'fold_param', 'log_plots_param', 'imputation_classifier', 'imputation_regressor', 'logging_param', 'USI', '_ml_usecase', 'fold_groups_param', '_available_plots', 'html_param', 'exp_name_log', '_gpu_n_jobs_param', 'X', 'y', 'fix_imbalance_method_param', 'fold_shuffle_param', 'pycaret_globals', 'n_jobs_param', '_all_models'}
+2022-10-05 19:55:35,023:INFO:Preparing display monitor
+2022-10-05 19:55:35,024:INFO:Preparing display monitor
+2022-10-05 19:55:35,076:INFO:Importing libraries
+2022-10-05 19:55:35,078:INFO:Copying data for preprocessing
+2022-10-05 19:55:35,182:INFO:Declaring preprocessing parameters
+2022-10-05 19:55:35,329:INFO:Setting up iterative imputation
+2022-10-05 19:55:35,658:WARNING:Couldn't import xgboost.XGBClassifier
+2022-10-05 19:55:35,660:WARNING:Couldn't import catboost.CatBoostClassifier
+2022-10-05 19:55:36,115:WARNING:Couldn't import xgboost.XGBRegressor
+2022-10-05 19:55:36,118:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-05 19:55:36,120:INFO:Creating preprocessing pipeline
+2022-10-05 19:55:37,298:INFO:Preprocessing pipeline created successfully
+2022-10-05 19:55:37,298:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-10-05 19:55:37,299:INFO:Creating global containers
+2022-10-05 19:55:37,304:INFO:Internal pipeline: Pipeline(memory=None,
+         steps=[('fix_imbalance',
+                 SMOTE(k_neighbors=5, n_jobs=None, random_state=42,
+                       sampling_strategy='auto'))],
+         verbose=False)
+2022-10-05 20:00:35,478:INFO:Iterative Imputation: 1 cycle | seller_id
+2022-10-05 20:01:32,676:INFO:Initializing compare_models()
+2022-10-05 20:01:32,676:INFO:compare_models(include=None, fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, display=None, exclude=None)
+2022-10-05 20:01:32,677:INFO:Checking exceptions
+2022-10-05 20:03:06,963:INFO:PyCaret Supervised Module
+2022-10-05 20:03:06,964:INFO:ML Usecase: classification
+2022-10-05 20:03:06,964:INFO:version 2.3.10
+2022-10-05 20:03:06,964:INFO:Initializing setup()
+2022-10-05 20:03:06,965:INFO:setup(target=review_score, ml_usecase=classification, available_plots={'parameter': 'Hyperparameters', 'auc': 'AUC', 'confusion_matrix': 'Confusion Matrix', 'threshold': 'Threshold', 'pr': 'Precision Recall', 'error': 'Prediction Error', 'class_report': 'Class Report', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'calibration': 'Calibration Curve', 'vc': 'Validation Curve', 'dimension': 'Dimensions', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'boundary': 'Decision Boundary', 'lift': 'Lift Chart', 'gain': 'Gain Chart', 'tree': 'Decision Tree', 'ks': 'KS Statistic Plot'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=iterative, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=most_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=True, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=True, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=stratifiedkfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=42, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-10-05 20:03:06,965:INFO:Checking environment
+2022-10-05 20:03:06,966:INFO:python_version: 3.8.13
+2022-10-05 20:03:06,966:INFO:python_build: ('default', 'Mar 28 2022 06:59:08')
+2022-10-05 20:03:06,966:INFO:machine: AMD64
+2022-10-05 20:03:06,967:INFO:platform: Windows-10-10.0.19044-SP0
+2022-10-05 20:03:06,967:INFO:Memory: svmem(total=8470003712, available=1514176512, percent=82.1, used=6955827200, free=1514176512)
+2022-10-05 20:03:06,967:INFO:Physical Core: 2
+2022-10-05 20:03:06,968:INFO:Logical Core: 4
+2022-10-05 20:03:06,968:INFO:Checking libraries
+2022-10-05 20:03:06,968:INFO:pd==1.4.4
+2022-10-05 20:03:06,968:INFO:numpy==1.20.3
+2022-10-05 20:03:06,969:INFO:sklearn==0.23.2
+2022-10-05 20:03:06,969:INFO:lightgbm==3.3.2
+2022-10-05 20:03:06,972:WARNING:catboost not found
+2022-10-05 20:03:06,975:WARNING:xgboost not found
+2022-10-05 20:03:06,975:INFO:mlflow==1.29.0
+2022-10-05 20:03:06,976:INFO:Checking Exceptions
+2022-10-05 20:03:06,976:INFO:Declaring global variables
+2022-10-05 20:03:06,976:INFO:USI: 6b2e
+2022-10-05 20:03:06,977:INFO:pycaret_globals: {'_all_models_internal', 'experiment__', '_internal_pipeline', 'transform_target_method_param', 'create_model_container', 'iterative_imputation_iters_param', 'transform_target_param', 'dashboard_logger', '_all_metrics', 'X_test', 'prep_pipe', 'gpu_param', 'master_model_container', 'y_test', 'y_train', 'seed', 'data_before_preprocess', 'X_train', 'fix_imbalance_param', 'stratify_param', 'target_param', 'fold_groups_param_full', 'display_container', 'fold_generator', 'fold_param', 'log_plots_param', 'imputation_classifier', 'imputation_regressor', 'logging_param', 'USI', '_ml_usecase', 'fold_groups_param', '_available_plots', 'html_param', 'exp_name_log', '_gpu_n_jobs_param', 'X', 'y', 'fix_imbalance_method_param', 'fold_shuffle_param', 'pycaret_globals', 'n_jobs_param', '_all_models'}
+2022-10-05 20:03:06,977:INFO:Preparing display monitor
+2022-10-05 20:03:06,977:INFO:Preparing display monitor
+2022-10-05 20:03:07,035:INFO:Importing libraries
+2022-10-05 20:03:07,041:INFO:Copying data for preprocessing
+2022-10-05 20:03:07,143:INFO:Declaring preprocessing parameters
+2022-10-05 20:03:07,316:INFO:Setting up iterative imputation
+2022-10-05 20:03:07,753:WARNING:Couldn't import xgboost.XGBClassifier
+2022-10-05 20:03:07,755:WARNING:Couldn't import catboost.CatBoostClassifier
+2022-10-05 20:03:08,239:WARNING:Couldn't import xgboost.XGBRegressor
+2022-10-05 20:03:08,242:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-05 20:03:08,244:INFO:Creating preprocessing pipeline
+2022-10-05 20:03:09,538:INFO:Preprocessing pipeline created successfully
+2022-10-05 20:03:09,538:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-10-05 20:03:09,538:INFO:Creating global containers
+2022-10-05 20:03:09,542:INFO:Internal pipeline: Pipeline(memory=None,
+         steps=[('fix_imbalance',
+                 SMOTE(k_neighbors=5, n_jobs=None, random_state=42,
+                       sampling_strategy='auto'))],
+         verbose=False)
+2022-10-05 20:04:52,753:INFO:Iterative Imputation: 1 cycle | seller_zip_code_prefix
+2022-10-05 20:08:05,910:INFO:PyCaret Supervised Module
+2022-10-05 20:08:05,911:INFO:ML Usecase: classification
+2022-10-05 20:08:05,911:INFO:version 2.3.10
+2022-10-05 20:08:05,911:INFO:Initializing setup()
+2022-10-05 20:08:05,912:INFO:setup(target=review_score, ml_usecase=classification, available_plots={'parameter': 'Hyperparameters', 'auc': 'AUC', 'confusion_matrix': 'Confusion Matrix', 'threshold': 'Threshold', 'pr': 'Precision Recall', 'error': 'Prediction Error', 'class_report': 'Class Report', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'calibration': 'Calibration Curve', 'vc': 'Validation Curve', 'dimension': 'Dimensions', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'boundary': 'Decision Boundary', 'lift': 'Lift Chart', 'gain': 'Gain Chart', 'tree': 'Decision Tree', 'ks': 'KS Statistic Plot'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=iterative, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=most_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=True, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=stratifiedkfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=42, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-10-05 20:08:05,912:INFO:Checking environment
+2022-10-05 20:08:05,912:INFO:python_version: 3.8.13
+2022-10-05 20:08:05,912:INFO:python_build: ('default', 'Mar 28 2022 06:59:08')
+2022-10-05 20:08:05,913:INFO:machine: AMD64
+2022-10-05 20:08:05,913:INFO:platform: Windows-10-10.0.19044-SP0
+2022-10-05 20:08:05,913:INFO:Memory: svmem(total=8470003712, available=1868013568, percent=77.9, used=6601990144, free=1868013568)
+2022-10-05 20:08:05,913:INFO:Physical Core: 2
+2022-10-05 20:08:05,914:INFO:Logical Core: 4
+2022-10-05 20:08:05,914:INFO:Checking libraries
+2022-10-05 20:08:05,914:INFO:pd==1.4.4
+2022-10-05 20:08:05,914:INFO:numpy==1.20.3
+2022-10-05 20:08:05,915:INFO:sklearn==0.23.2
+2022-10-05 20:08:05,915:INFO:lightgbm==3.3.2
+2022-10-05 20:08:05,919:WARNING:catboost not found
+2022-10-05 20:08:05,922:WARNING:xgboost not found
+2022-10-05 20:08:05,922:INFO:mlflow==1.29.0
+2022-10-05 20:08:05,922:INFO:Checking Exceptions
+2022-10-05 20:08:05,923:INFO:Declaring global variables
+2022-10-05 20:08:05,923:INFO:USI: b416
+2022-10-05 20:08:05,923:INFO:pycaret_globals: {'_all_models_internal', 'experiment__', '_internal_pipeline', 'transform_target_method_param', 'create_model_container', 'iterative_imputation_iters_param', 'transform_target_param', 'dashboard_logger', '_all_metrics', 'X_test', 'prep_pipe', 'gpu_param', 'master_model_container', 'y_test', 'y_train', 'seed', 'data_before_preprocess', 'X_train', 'fix_imbalance_param', 'stratify_param', 'target_param', 'fold_groups_param_full', 'display_container', 'fold_generator', 'fold_param', 'log_plots_param', 'imputation_classifier', 'imputation_regressor', 'logging_param', 'USI', '_ml_usecase', 'fold_groups_param', '_available_plots', 'html_param', 'exp_name_log', '_gpu_n_jobs_param', 'X', 'y', 'fix_imbalance_method_param', 'fold_shuffle_param', 'pycaret_globals', 'n_jobs_param', '_all_models'}
+2022-10-05 20:08:05,924:INFO:Preparing display monitor
+2022-10-05 20:08:05,924:INFO:Preparing display monitor
+2022-10-05 20:08:05,988:INFO:Importing libraries
+2022-10-05 20:08:05,989:INFO:Copying data for preprocessing
+2022-10-05 20:08:06,068:INFO:Declaring preprocessing parameters
+2022-10-05 20:08:06,139:INFO:Setting up iterative imputation
+2022-10-05 20:08:06,441:WARNING:Couldn't import xgboost.XGBClassifier
+2022-10-05 20:08:06,445:WARNING:Couldn't import catboost.CatBoostClassifier
+2022-10-05 20:08:06,874:WARNING:Couldn't import xgboost.XGBRegressor
+2022-10-05 20:08:06,876:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-05 20:08:06,877:INFO:Creating preprocessing pipeline
+2022-10-05 20:08:07,825:INFO:Preprocessing pipeline created successfully
+2022-10-05 20:08:07,825:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-10-05 20:08:07,826:INFO:Creating global containers
+2022-10-05 20:08:07,826:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2022-10-05 20:09:50,815:INFO:Iterative Imputation: 1 cycle | seller_zip_code_prefix
+2022-10-05 20:27:36,620:INFO:PyCaret Supervised Module
+2022-10-05 20:27:36,621:INFO:ML Usecase: classification
+2022-10-05 20:27:36,621:INFO:version 2.3.10
+2022-10-05 20:27:36,621:INFO:Initializing setup()
+2022-10-05 20:27:36,622:INFO:setup(target=review_score, ml_usecase=classification, available_plots={'parameter': 'Hyperparameters', 'auc': 'AUC', 'confusion_matrix': 'Confusion Matrix', 'threshold': 'Threshold', 'pr': 'Precision Recall', 'error': 'Prediction Error', 'class_report': 'Class Report', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'calibration': 'Calibration Curve', 'vc': 'Validation Curve', 'dimension': 'Dimensions', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'boundary': 'Decision Boundary', 'lift': 'Lift Chart', 'gain': 'Gain Chart', 'tree': 'Decision Tree', 'ks': 'KS Statistic Plot'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=iterative, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=most_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=True, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=stratifiedkfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=42, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-10-05 20:27:36,622:INFO:Checking environment
+2022-10-05 20:27:36,622:INFO:python_version: 3.8.13
+2022-10-05 20:27:36,623:INFO:python_build: ('default', 'Mar 28 2022 06:59:08')
+2022-10-05 20:27:36,623:INFO:machine: AMD64
+2022-10-05 20:27:36,624:INFO:platform: Windows-10-10.0.19044-SP0
+2022-10-05 20:27:36,624:INFO:Memory: svmem(total=8470003712, available=1594212352, percent=81.2, used=6875791360, free=1594212352)
+2022-10-05 20:27:36,625:INFO:Physical Core: 2
+2022-10-05 20:27:36,626:INFO:Logical Core: 4
+2022-10-05 20:27:36,626:INFO:Checking libraries
+2022-10-05 20:27:36,627:INFO:pd==1.4.4
+2022-10-05 20:27:36,627:INFO:numpy==1.20.3
+2022-10-05 20:27:36,627:INFO:sklearn==0.23.2
+2022-10-05 20:27:36,627:INFO:lightgbm==3.3.2
+2022-10-05 20:27:36,630:WARNING:catboost not found
+2022-10-05 20:27:36,633:WARNING:xgboost not found
+2022-10-05 20:27:36,633:INFO:mlflow==1.29.0
+2022-10-05 20:27:36,634:INFO:Checking Exceptions
+2022-10-05 20:27:36,634:INFO:Declaring global variables
+2022-10-05 20:27:36,634:INFO:USI: 1e28
+2022-10-05 20:27:36,634:INFO:pycaret_globals: {'_all_models_internal', 'experiment__', '_internal_pipeline', 'transform_target_method_param', 'create_model_container', 'iterative_imputation_iters_param', 'transform_target_param', 'dashboard_logger', '_all_metrics', 'X_test', 'prep_pipe', 'gpu_param', 'master_model_container', 'y_test', 'y_train', 'seed', 'data_before_preprocess', 'X_train', 'fix_imbalance_param', 'stratify_param', 'target_param', 'fold_groups_param_full', 'display_container', 'fold_generator', 'fold_param', 'log_plots_param', 'imputation_classifier', 'imputation_regressor', 'logging_param', 'USI', '_ml_usecase', 'fold_groups_param', '_available_plots', 'html_param', 'exp_name_log', '_gpu_n_jobs_param', 'X', 'y', 'fix_imbalance_method_param', 'fold_shuffle_param', 'pycaret_globals', 'n_jobs_param', '_all_models'}
+2022-10-05 20:27:36,634:INFO:Preparing display monitor
+2022-10-05 20:27:36,634:INFO:Preparing display monitor
+2022-10-05 20:27:36,664:INFO:Importing libraries
+2022-10-05 20:27:36,665:INFO:Copying data for preprocessing
+2022-10-05 20:27:36,746:INFO:Declaring preprocessing parameters
+2022-10-05 20:27:36,827:INFO:Setting up iterative imputation
+2022-10-05 20:27:37,157:WARNING:Couldn't import xgboost.XGBClassifier
+2022-10-05 20:27:37,159:WARNING:Couldn't import catboost.CatBoostClassifier
+2022-10-05 20:27:37,629:WARNING:Couldn't import xgboost.XGBRegressor
+2022-10-05 20:27:37,631:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-05 20:27:37,632:INFO:Creating preprocessing pipeline
+2022-10-05 20:27:38,653:INFO:Preprocessing pipeline created successfully
+2022-10-05 20:27:38,654:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-10-05 20:27:38,654:INFO:Creating global containers
+2022-10-05 20:27:38,655:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2022-10-05 20:28:21,620:INFO:Iterative Imputation: 1 cycle | seller_city
+2022-10-05 20:38:12,179:INFO:PyCaret Supervised Module
+2022-10-05 20:38:12,179:INFO:ML Usecase: classification
+2022-10-05 20:38:12,179:INFO:version 2.3.10
+2022-10-05 20:38:12,180:INFO:Initializing setup()
+2022-10-05 20:38:12,180:INFO:setup(target=review_score, ml_usecase=classification, available_plots={'parameter': 'Hyperparameters', 'auc': 'AUC', 'confusion_matrix': 'Confusion Matrix', 'threshold': 'Threshold', 'pr': 'Precision Recall', 'error': 'Prediction Error', 'class_report': 'Class Report', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'calibration': 'Calibration Curve', 'vc': 'Validation Curve', 'dimension': 'Dimensions', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'boundary': 'Decision Boundary', 'lift': 'Lift Chart', 'gain': 'Gain Chart', 'tree': 'Decision Tree', 'ks': 'KS Statistic Plot'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=iterative, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=most_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=True, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=stratifiedkfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=42, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-10-05 20:38:12,180:INFO:Checking environment
+2022-10-05 20:38:12,181:INFO:python_version: 3.8.13
+2022-10-05 20:38:12,182:INFO:python_build: ('default', 'Mar 28 2022 06:59:08')
+2022-10-05 20:38:12,182:INFO:machine: AMD64
+2022-10-05 20:38:12,182:INFO:platform: Windows-10-10.0.19044-SP0
+2022-10-05 20:38:12,182:INFO:Memory: svmem(total=8470003712, available=880320512, percent=89.6, used=7589683200, free=880320512)
+2022-10-05 20:38:12,183:INFO:Physical Core: 2
+2022-10-05 20:38:12,183:INFO:Logical Core: 4
+2022-10-05 20:38:12,183:INFO:Checking libraries
+2022-10-05 20:38:12,184:INFO:pd==1.4.4
+2022-10-05 20:38:12,184:INFO:numpy==1.20.3
+2022-10-05 20:38:12,184:INFO:sklearn==0.23.2
+2022-10-05 20:38:12,185:INFO:lightgbm==3.3.2
+2022-10-05 20:38:12,190:WARNING:catboost not found
+2022-10-05 20:38:12,192:WARNING:xgboost not found
+2022-10-05 20:38:12,192:INFO:mlflow==1.29.0
+2022-10-05 20:38:12,193:INFO:Checking Exceptions
+2022-10-05 20:38:12,193:INFO:Declaring global variables
+2022-10-05 20:38:12,193:INFO:USI: 3fb9
+2022-10-05 20:38:12,194:INFO:pycaret_globals: {'_all_models_internal', 'experiment__', '_internal_pipeline', 'transform_target_method_param', 'create_model_container', 'iterative_imputation_iters_param', 'transform_target_param', 'dashboard_logger', '_all_metrics', 'X_test', 'prep_pipe', 'gpu_param', 'master_model_container', 'y_test', 'y_train', 'seed', 'data_before_preprocess', 'X_train', 'fix_imbalance_param', 'stratify_param', 'target_param', 'fold_groups_param_full', 'display_container', 'fold_generator', 'fold_param', 'log_plots_param', 'imputation_classifier', 'imputation_regressor', 'logging_param', 'USI', '_ml_usecase', 'fold_groups_param', '_available_plots', 'html_param', 'exp_name_log', '_gpu_n_jobs_param', 'X', 'y', 'fix_imbalance_method_param', 'fold_shuffle_param', 'pycaret_globals', 'n_jobs_param', '_all_models'}
+2022-10-05 20:38:12,194:INFO:Preparing display monitor
+2022-10-05 20:38:12,194:INFO:Preparing display monitor
+2022-10-05 20:38:12,228:INFO:Importing libraries
+2022-10-05 20:38:12,229:INFO:Copying data for preprocessing
+2022-10-05 20:38:12,304:INFO:Declaring preprocessing parameters
+2022-10-05 20:38:12,390:INFO:Setting up iterative imputation
+2022-10-05 20:38:12,693:WARNING:Couldn't import xgboost.XGBClassifier
+2022-10-05 20:38:12,696:WARNING:Couldn't import catboost.CatBoostClassifier
+2022-10-05 20:38:13,114:WARNING:Couldn't import xgboost.XGBRegressor
+2022-10-05 20:38:13,116:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-05 20:38:13,118:INFO:Creating preprocessing pipeline
+2022-10-05 20:38:14,048:INFO:Preprocessing pipeline created successfully
+2022-10-05 20:38:14,049:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-10-05 20:38:14,050:INFO:Creating global containers
+2022-10-05 20:38:14,051:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2022-10-05 20:40:17,257:INFO:Iterative Imputation: 1 cycle | seller_city
+2022-10-05 20:50:54,222:INFO:PyCaret Supervised Module
+2022-10-05 20:50:54,222:INFO:ML Usecase: classification
+2022-10-05 20:50:54,222:INFO:version 2.3.10
+2022-10-05 20:50:54,222:INFO:Initializing setup()
+2022-10-05 20:50:54,222:INFO:setup(target=review_score, ml_usecase=classification, available_plots={'parameter': 'Hyperparameters', 'auc': 'AUC', 'confusion_matrix': 'Confusion Matrix', 'threshold': 'Threshold', 'pr': 'Precision Recall', 'error': 'Prediction Error', 'class_report': 'Class Report', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'calibration': 'Calibration Curve', 'vc': 'Validation Curve', 'dimension': 'Dimensions', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'boundary': 'Decision Boundary', 'lift': 'Lift Chart', 'gain': 'Gain Chart', 'tree': 'Decision Tree', 'ks': 'KS Statistic Plot'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=iterative, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=most_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=True, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=stratifiedkfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=42, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-10-05 20:50:54,223:INFO:Checking environment
+2022-10-05 20:50:54,223:INFO:python_version: 3.8.13
+2022-10-05 20:50:54,223:INFO:python_build: ('default', 'Mar 28 2022 06:59:08')
+2022-10-05 20:50:54,223:INFO:machine: AMD64
+2022-10-05 20:50:54,223:INFO:platform: Windows-10-10.0.19044-SP0
+2022-10-05 20:50:54,223:INFO:Memory: svmem(total=8470003712, available=225611776, percent=97.3, used=8244391936, free=225611776)
+2022-10-05 20:50:54,223:INFO:Physical Core: 2
+2022-10-05 20:50:54,223:INFO:Logical Core: 4
+2022-10-05 20:50:54,224:INFO:Checking libraries
+2022-10-05 20:50:54,224:INFO:pd==1.4.4
+2022-10-05 20:50:54,224:INFO:numpy==1.20.3
+2022-10-05 20:50:54,224:INFO:sklearn==0.23.2
+2022-10-05 20:50:54,224:INFO:lightgbm==3.3.2
+2022-10-05 20:50:54,476:WARNING:catboost not found
+2022-10-05 20:50:54,478:WARNING:xgboost not found
+2022-10-05 20:50:54,478:INFO:mlflow==1.29.0
+2022-10-05 20:50:54,478:INFO:Checking Exceptions
+2022-10-05 20:50:54,479:INFO:Declaring global variables
+2022-10-05 20:50:54,479:INFO:USI: 82b2
+2022-10-05 20:50:54,479:INFO:pycaret_globals: {'_all_models_internal', 'experiment__', '_internal_pipeline', 'transform_target_method_param', 'create_model_container', 'iterative_imputation_iters_param', 'transform_target_param', 'dashboard_logger', '_all_metrics', 'X_test', 'prep_pipe', 'gpu_param', 'master_model_container', 'y_test', 'y_train', 'seed', 'data_before_preprocess', 'X_train', 'fix_imbalance_param', 'stratify_param', 'target_param', 'fold_groups_param_full', 'display_container', 'fold_generator', 'fold_param', 'log_plots_param', 'imputation_classifier', 'imputation_regressor', 'logging_param', 'USI', '_ml_usecase', 'fold_groups_param', '_available_plots', 'html_param', 'exp_name_log', '_gpu_n_jobs_param', 'X', 'y', 'fix_imbalance_method_param', 'fold_shuffle_param', 'pycaret_globals', 'n_jobs_param', '_all_models'}
+2022-10-05 20:50:54,479:INFO:Preparing display monitor
+2022-10-05 20:50:54,479:INFO:Preparing display monitor
+2022-10-05 20:50:54,558:INFO:Importing libraries
+2022-10-05 20:50:54,559:INFO:Copying data for preprocessing
+2022-10-05 20:51:21,136:INFO:Declaring preprocessing parameters
+2022-10-05 20:51:21,634:INFO:Setting up iterative imputation
+2022-10-05 20:51:22,526:WARNING:Couldn't import xgboost.XGBClassifier
+2022-10-05 20:51:22,528:WARNING:Couldn't import catboost.CatBoostClassifier
+2022-10-05 20:51:23,716:WARNING:Couldn't import xgboost.XGBRegressor
+2022-10-05 20:51:23,718:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-05 20:51:23,719:INFO:Creating preprocessing pipeline
+2022-10-05 20:51:29,477:INFO:Preprocessing pipeline created successfully
+2022-10-05 20:51:29,477:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-10-05 20:51:29,494:INFO:Creating global containers
+2022-10-05 20:51:29,587:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2022-10-05 20:53:34,341:INFO:Iterative Imputation: 1 cycle | seller_city
+2022-10-05 21:20:48,742:INFO:PyCaret Supervised Module
+2022-10-05 21:20:48,743:INFO:ML Usecase: classification
+2022-10-05 21:20:48,743:INFO:version 2.3.10
+2022-10-05 21:20:48,743:INFO:Initializing setup()
+2022-10-05 21:20:48,744:INFO:setup(target=review_score, ml_usecase=classification, available_plots={'parameter': 'Hyperparameters', 'auc': 'AUC', 'confusion_matrix': 'Confusion Matrix', 'threshold': 'Threshold', 'pr': 'Precision Recall', 'error': 'Prediction Error', 'class_report': 'Class Report', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'calibration': 'Calibration Curve', 'vc': 'Validation Curve', 'dimension': 'Dimensions', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'boundary': 'Decision Boundary', 'lift': 'Lift Chart', 'gain': 'Gain Chart', 'tree': 'Decision Tree', 'ks': 'KS Statistic Plot'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=iterative, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=most_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=True, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=stratifiedkfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=42, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-10-05 21:20:48,744:INFO:Checking environment
+2022-10-05 21:20:48,744:INFO:python_version: 3.8.13
+2022-10-05 21:20:48,744:INFO:python_build: ('default', 'Mar 28 2022 06:59:08')
+2022-10-05 21:20:48,745:INFO:machine: AMD64
+2022-10-05 21:20:48,745:INFO:platform: Windows-10-10.0.19044-SP0
+2022-10-05 21:20:48,745:INFO:Memory: svmem(total=8470003712, available=2595045376, percent=69.4, used=5874958336, free=2595045376)
+2022-10-05 21:20:48,745:INFO:Physical Core: 2
+2022-10-05 21:20:48,745:INFO:Logical Core: 4
+2022-10-05 21:20:48,746:INFO:Checking libraries
+2022-10-05 21:20:48,746:INFO:pd==1.4.4
+2022-10-05 21:20:48,746:INFO:numpy==1.20.3
+2022-10-05 21:20:48,746:INFO:sklearn==0.23.2
+2022-10-05 21:20:48,746:INFO:lightgbm==3.3.2
+2022-10-05 21:20:48,750:WARNING:catboost not found
+2022-10-05 21:20:48,752:WARNING:xgboost not found
+2022-10-05 21:20:48,753:INFO:mlflow==1.29.0
+2022-10-05 21:20:48,753:INFO:Checking Exceptions
+2022-10-05 21:20:48,753:INFO:Declaring global variables
+2022-10-05 21:20:48,754:INFO:USI: 2d59
+2022-10-05 21:20:48,754:INFO:pycaret_globals: {'_all_models', 'target_param', 'logging_param', 'stratify_param', '_all_models_internal', 'fold_groups_param_full', 'X_test', 'X', 'exp_name_log', 'fold_generator', '_all_metrics', 'fix_imbalance_method_param', 'fix_imbalance_param', 'master_model_container', 'transform_target_param', 'seed', 'fold_shuffle_param', 'experiment__', 'y', 'create_model_container', 'dashboard_logger', 'iterative_imputation_iters_param', 'y_train', 'n_jobs_param', 'y_test', '_ml_usecase', 'fold_groups_param', 'pycaret_globals', 'imputation_regressor', '_gpu_n_jobs_param', 'log_plots_param', 'transform_target_method_param', 'imputation_classifier', 'html_param', 'gpu_param', 'data_before_preprocess', 'prep_pipe', 'X_train', 'fold_param', 'USI', '_available_plots', 'display_container', '_internal_pipeline'}
+2022-10-05 21:20:48,754:INFO:Preparing display monitor
+2022-10-05 21:20:48,755:INFO:Preparing display monitor
+2022-10-05 21:20:48,805:INFO:Importing libraries
+2022-10-05 21:20:48,806:INFO:Copying data for preprocessing
+2022-10-05 21:20:48,873:INFO:Declaring preprocessing parameters
+2022-10-05 21:20:48,941:INFO:Setting up iterative imputation
+2022-10-05 21:20:49,354:WARNING:Couldn't import xgboost.XGBClassifier
+2022-10-05 21:20:49,359:WARNING:Couldn't import catboost.CatBoostClassifier
+2022-10-05 21:20:49,743:WARNING:Couldn't import xgboost.XGBRegressor
+2022-10-05 21:20:49,744:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-05 21:20:49,745:INFO:Creating preprocessing pipeline
+2022-10-05 21:20:50,725:INFO:Preprocessing pipeline created successfully
+2022-10-05 21:20:50,725:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-10-05 21:20:50,726:INFO:Creating global containers
+2022-10-05 21:20:50,754:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2022-10-05 21:28:32,502:INFO:PyCaret Supervised Module
+2022-10-05 21:28:32,504:INFO:ML Usecase: classification
+2022-10-05 21:28:32,505:INFO:version 2.3.10
+2022-10-05 21:28:32,505:INFO:Initializing setup()
+2022-10-05 21:28:32,506:INFO:setup(target=review_score, ml_usecase=classification, available_plots={'parameter': 'Hyperparameters', 'auc': 'AUC', 'confusion_matrix': 'Confusion Matrix', 'threshold': 'Threshold', 'pr': 'Precision Recall', 'error': 'Prediction Error', 'class_report': 'Class Report', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'calibration': 'Calibration Curve', 'vc': 'Validation Curve', 'dimension': 'Dimensions', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'boundary': 'Decision Boundary', 'lift': 'Lift Chart', 'gain': 'Gain Chart', 'tree': 'Decision Tree', 'ks': 'KS Statistic Plot'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=iterative, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=most_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=True, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=stratifiedkfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=42, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-10-05 21:28:32,506:INFO:Checking environment
+2022-10-05 21:28:32,507:INFO:python_version: 3.8.13
+2022-10-05 21:28:32,507:INFO:python_build: ('default', 'Mar 28 2022 06:59:08')
+2022-10-05 21:28:32,507:INFO:machine: AMD64
+2022-10-05 21:28:32,508:INFO:platform: Windows-10-10.0.19044-SP0
+2022-10-05 21:28:32,508:INFO:Memory: svmem(total=8470003712, available=3277438976, percent=61.3, used=5192564736, free=3277438976)
+2022-10-05 21:28:32,509:INFO:Physical Core: 2
+2022-10-05 21:28:32,509:INFO:Logical Core: 4
+2022-10-05 21:28:32,509:INFO:Checking libraries
+2022-10-05 21:28:32,510:INFO:pd==1.4.4
+2022-10-05 21:28:32,510:INFO:numpy==1.20.3
+2022-10-05 21:28:32,510:INFO:sklearn==0.23.2
+2022-10-05 21:28:32,511:INFO:lightgbm==3.3.2
+2022-10-05 21:28:32,518:WARNING:catboost not found
+2022-10-05 21:28:32,523:WARNING:xgboost not found
+2022-10-05 21:28:32,524:INFO:mlflow==1.29.0
+2022-10-05 21:28:32,524:INFO:Checking Exceptions
+2022-10-05 21:28:32,525:INFO:Declaring global variables
+2022-10-05 21:28:32,525:INFO:USI: c90f
+2022-10-05 21:28:32,526:INFO:pycaret_globals: {'fix_imbalance_method_param', 'fold_groups_param', 'gpu_param', '_internal_pipeline', 'n_jobs_param', 'USI', 'fold_generator', 'create_model_container', '_all_models', '_all_metrics', 'log_plots_param', 'X', 'transform_target_method_param', 'master_model_container', 'fold_shuffle_param', 'prep_pipe', 'transform_target_param', 'imputation_classifier', 'fold_groups_param_full', 'y_train', 'experiment__', 'pycaret_globals', 'seed', '_gpu_n_jobs_param', 'iterative_imputation_iters_param', 'html_param', 'exp_name_log', 'target_param', '_ml_usecase', 'imputation_regressor', 'y_test', 'fold_param', '_available_plots', 'X_test', 'y', '_all_models_internal', 'dashboard_logger', 'fix_imbalance_param', 'X_train', 'logging_param', 'display_container', 'data_before_preprocess', 'stratify_param'}
+2022-10-05 21:28:32,526:INFO:Preparing display monitor
+2022-10-05 21:28:32,527:INFO:Preparing display monitor
+2022-10-05 21:28:32,625:INFO:Importing libraries
+2022-10-05 21:28:32,625:INFO:Copying data for preprocessing
+2022-10-05 21:28:32,669:INFO:Declaring preprocessing parameters
+2022-10-05 21:28:32,730:INFO:Setting up iterative imputation
+2022-10-05 21:28:32,995:WARNING:Couldn't import xgboost.XGBClassifier
+2022-10-05 21:28:32,998:WARNING:Couldn't import catboost.CatBoostClassifier
+2022-10-05 21:28:33,383:WARNING:Couldn't import xgboost.XGBRegressor
+2022-10-05 21:28:33,385:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-05 21:28:33,386:INFO:Creating preprocessing pipeline
+2022-10-05 21:28:34,259:INFO:Preprocessing pipeline created successfully
+2022-10-05 21:28:34,259:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-10-05 21:28:34,259:INFO:Creating global containers
+2022-10-05 21:28:34,262:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2022-10-05 21:29:49,008:INFO:Iterative Imputation: 1 cycle | seller_zip_code_prefix
+2022-10-05 21:49:04,033:INFO:PyCaret Supervised Module
+2022-10-05 21:49:04,034:INFO:ML Usecase: classification
+2022-10-05 21:49:04,034:INFO:version 2.3.10
+2022-10-05 21:49:04,034:INFO:Initializing setup()
+2022-10-05 21:49:04,034:INFO:setup(target=review_score, ml_usecase=classification, available_plots={'parameter': 'Hyperparameters', 'auc': 'AUC', 'confusion_matrix': 'Confusion Matrix', 'threshold': 'Threshold', 'pr': 'Precision Recall', 'error': 'Prediction Error', 'class_report': 'Class Report', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'calibration': 'Calibration Curve', 'vc': 'Validation Curve', 'dimension': 'Dimensions', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'boundary': 'Decision Boundary', 'lift': 'Lift Chart', 'gain': 'Gain Chart', 'tree': 'Decision Tree', 'ks': 'KS Statistic Plot'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=iterative, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=most_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=True, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=stratifiedkfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=42, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-10-05 21:49:04,035:INFO:Checking environment
+2022-10-05 21:49:04,035:INFO:python_version: 3.8.13
+2022-10-05 21:49:04,036:INFO:python_build: ('default', 'Mar 28 2022 06:59:08')
+2022-10-05 21:49:04,036:INFO:machine: AMD64
+2022-10-05 21:49:04,036:INFO:platform: Windows-10-10.0.19044-SP0
+2022-10-05 21:49:04,037:INFO:Memory: svmem(total=8470003712, available=2351751168, percent=72.2, used=6118252544, free=2351751168)
+2022-10-05 21:49:04,037:INFO:Physical Core: 2
+2022-10-05 21:49:04,037:INFO:Logical Core: 4
+2022-10-05 21:49:04,037:INFO:Checking libraries
+2022-10-05 21:49:04,038:INFO:pd==1.4.4
+2022-10-05 21:49:04,038:INFO:numpy==1.20.3
+2022-10-05 21:49:04,038:INFO:sklearn==0.23.2
+2022-10-05 21:49:04,039:INFO:lightgbm==3.3.2
+2022-10-05 21:49:04,042:WARNING:catboost not found
+2022-10-05 21:49:04,045:WARNING:xgboost not found
+2022-10-05 21:49:04,045:INFO:mlflow==1.29.0
+2022-10-05 21:49:04,045:INFO:Checking Exceptions
+2022-10-05 21:49:04,046:INFO:Declaring global variables
+2022-10-05 21:49:04,046:INFO:USI: 0df2
+2022-10-05 21:49:04,046:INFO:pycaret_globals: {'fix_imbalance_method_param', 'fold_groups_param', 'gpu_param', '_internal_pipeline', 'n_jobs_param', 'USI', 'fold_generator', 'create_model_container', '_all_models', '_all_metrics', 'log_plots_param', 'X', 'transform_target_method_param', 'master_model_container', 'fold_shuffle_param', 'prep_pipe', 'transform_target_param', 'imputation_classifier', 'fold_groups_param_full', 'y_train', 'experiment__', 'pycaret_globals', 'seed', '_gpu_n_jobs_param', 'iterative_imputation_iters_param', 'html_param', 'exp_name_log', 'target_param', '_ml_usecase', 'imputation_regressor', 'y_test', 'fold_param', '_available_plots', 'X_test', 'y', '_all_models_internal', 'dashboard_logger', 'fix_imbalance_param', 'X_train', 'logging_param', 'display_container', 'data_before_preprocess', 'stratify_param'}
+2022-10-05 21:49:04,047:INFO:Preparing display monitor
+2022-10-05 21:49:04,047:INFO:Preparing display monitor
+2022-10-05 21:49:04,124:INFO:Importing libraries
+2022-10-05 21:49:04,124:INFO:Copying data for preprocessing
+2022-10-05 21:49:04,193:INFO:Declaring preprocessing parameters
+2022-10-05 21:49:04,244:INFO:Setting up iterative imputation
+2022-10-05 21:49:04,492:WARNING:Couldn't import xgboost.XGBClassifier
+2022-10-05 21:49:04,495:WARNING:Couldn't import catboost.CatBoostClassifier
+2022-10-05 21:49:04,855:WARNING:Couldn't import xgboost.XGBRegressor
+2022-10-05 21:49:04,857:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-05 21:49:04,858:INFO:Creating preprocessing pipeline
+2022-10-05 21:49:05,556:INFO:Preprocessing pipeline created successfully
+2022-10-05 21:49:05,556:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-10-05 21:49:05,557:INFO:Creating global containers
+2022-10-05 21:49:05,558:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2022-10-05 21:50:27,754:INFO:Iterative Imputation: 1 cycle | freight_value
+2022-10-05 22:02:27,713:INFO:PyCaret Supervised Module
+2022-10-05 22:02:27,714:INFO:ML Usecase: classification
+2022-10-05 22:02:27,714:INFO:version 2.3.10
+2022-10-05 22:02:27,714:INFO:Initializing setup()
+2022-10-05 22:02:27,714:INFO:setup(target=review_score, ml_usecase=classification, available_plots={'parameter': 'Hyperparameters', 'auc': 'AUC', 'confusion_matrix': 'Confusion Matrix', 'threshold': 'Threshold', 'pr': 'Precision Recall', 'error': 'Prediction Error', 'class_report': 'Class Report', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'calibration': 'Calibration Curve', 'vc': 'Validation Curve', 'dimension': 'Dimensions', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'boundary': 'Decision Boundary', 'lift': 'Lift Chart', 'gain': 'Gain Chart', 'tree': 'Decision Tree', 'ks': 'KS Statistic Plot'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=iterative, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=most_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=True, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=stratifiedkfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=42, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-10-05 22:02:27,715:INFO:Checking environment
+2022-10-05 22:02:27,715:INFO:python_version: 3.8.13
+2022-10-05 22:02:27,715:INFO:python_build: ('default', 'Mar 28 2022 06:59:08')
+2022-10-05 22:02:27,715:INFO:machine: AMD64
+2022-10-05 22:02:27,715:INFO:platform: Windows-10-10.0.19044-SP0
+2022-10-05 22:02:27,715:INFO:Memory: svmem(total=8470003712, available=1454252032, percent=82.8, used=7015751680, free=1454252032)
+2022-10-05 22:02:27,716:INFO:Physical Core: 2
+2022-10-05 22:02:27,716:INFO:Logical Core: 4
+2022-10-05 22:02:27,716:INFO:Checking libraries
+2022-10-05 22:02:27,716:INFO:pd==1.4.4
+2022-10-05 22:02:27,717:INFO:numpy==1.20.3
+2022-10-05 22:02:27,717:INFO:sklearn==0.23.2
+2022-10-05 22:02:27,717:INFO:lightgbm==3.3.2
+2022-10-05 22:02:27,719:WARNING:catboost not found
+2022-10-05 22:02:27,721:WARNING:xgboost not found
+2022-10-05 22:02:27,721:INFO:mlflow==1.29.0
+2022-10-05 22:02:27,722:INFO:Checking Exceptions
+2022-10-05 22:02:27,722:INFO:Declaring global variables
+2022-10-05 22:02:27,722:INFO:USI: 0e9d
+2022-10-05 22:02:27,723:INFO:pycaret_globals: {'fix_imbalance_method_param', 'fold_groups_param', 'gpu_param', '_internal_pipeline', 'n_jobs_param', 'USI', 'fold_generator', 'create_model_container', '_all_models', '_all_metrics', 'log_plots_param', 'X', 'transform_target_method_param', 'master_model_container', 'fold_shuffle_param', 'prep_pipe', 'transform_target_param', 'imputation_classifier', 'fold_groups_param_full', 'y_train', 'experiment__', 'pycaret_globals', 'seed', '_gpu_n_jobs_param', 'iterative_imputation_iters_param', 'html_param', 'exp_name_log', 'target_param', '_ml_usecase', 'imputation_regressor', 'y_test', 'fold_param', '_available_plots', 'X_test', 'y', '_all_models_internal', 'dashboard_logger', 'fix_imbalance_param', 'X_train', 'logging_param', 'display_container', 'data_before_preprocess', 'stratify_param'}
+2022-10-05 22:02:27,723:INFO:Preparing display monitor
+2022-10-05 22:02:27,723:INFO:Preparing display monitor
+2022-10-05 22:02:27,758:INFO:Importing libraries
+2022-10-05 22:02:27,758:INFO:Copying data for preprocessing
+2022-10-05 22:02:27,801:INFO:Declaring preprocessing parameters
+2022-10-05 22:02:27,861:INFO:Setting up iterative imputation
+2022-10-05 22:02:28,141:WARNING:Couldn't import xgboost.XGBClassifier
+2022-10-05 22:02:28,143:WARNING:Couldn't import catboost.CatBoostClassifier
+2022-10-05 22:02:28,507:WARNING:Couldn't import xgboost.XGBRegressor
+2022-10-05 22:02:28,509:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-05 22:02:28,510:INFO:Creating preprocessing pipeline
+2022-10-05 22:02:29,230:INFO:Preprocessing pipeline created successfully
+2022-10-05 22:02:29,231:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-10-05 22:02:29,231:INFO:Creating global containers
+2022-10-05 22:02:29,232:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2022-10-05 22:03:58,925:INFO:Iterative Imputation: 1 cycle | freight_value
+2022-10-06 01:25:26,777:INFO:PyCaret Supervised Module
+2022-10-06 01:25:26,778:INFO:ML Usecase: classification
+2022-10-06 01:25:26,778:INFO:version 2.3.10
+2022-10-06 01:25:26,779:INFO:Initializing setup()
+2022-10-06 01:25:26,779:INFO:setup(target=review_score, ml_usecase=classification, available_plots={'parameter': 'Hyperparameters', 'auc': 'AUC', 'confusion_matrix': 'Confusion Matrix', 'threshold': 'Threshold', 'pr': 'Precision Recall', 'error': 'Prediction Error', 'class_report': 'Class Report', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'calibration': 'Calibration Curve', 'vc': 'Validation Curve', 'dimension': 'Dimensions', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'boundary': 'Decision Boundary', 'lift': 'Lift Chart', 'gain': 'Gain Chart', 'tree': 'Decision Tree', 'ks': 'KS Statistic Plot'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=iterative, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=most_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=True, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=stratifiedkfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=42, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-10-06 01:25:26,779:INFO:Checking environment
+2022-10-06 01:25:26,780:INFO:python_version: 3.8.13
+2022-10-06 01:25:26,780:INFO:python_build: ('default', 'Mar 28 2022 06:59:08')
+2022-10-06 01:25:26,781:INFO:machine: AMD64
+2022-10-06 01:25:26,781:INFO:platform: Windows-10-10.0.19044-SP0
+2022-10-06 01:25:26,782:INFO:Memory: svmem(total=8470003712, available=1950355456, percent=77.0, used=6519648256, free=1950355456)
+2022-10-06 01:25:26,782:INFO:Physical Core: 2
+2022-10-06 01:25:26,783:INFO:Logical Core: 4
+2022-10-06 01:25:26,783:INFO:Checking libraries
+2022-10-06 01:25:26,783:INFO:pd==1.4.4
+2022-10-06 01:25:26,783:INFO:numpy==1.20.3
+2022-10-06 01:25:26,783:INFO:sklearn==0.23.2
+2022-10-06 01:25:26,785:INFO:lightgbm==3.3.2
+2022-10-06 01:25:26,791:WARNING:catboost not found
+2022-10-06 01:25:26,794:WARNING:xgboost not found
+2022-10-06 01:25:26,795:INFO:mlflow==1.29.0
+2022-10-06 01:25:26,795:INFO:Checking Exceptions
+2022-10-06 01:25:26,796:INFO:Declaring global variables
+2022-10-06 01:25:26,797:INFO:USI: e531
+2022-10-06 01:25:26,797:INFO:pycaret_globals: {'fix_imbalance_method_param', 'fold_groups_param', 'gpu_param', '_internal_pipeline', 'n_jobs_param', 'USI', 'fold_generator', 'create_model_container', '_all_models', '_all_metrics', 'log_plots_param', 'X', 'transform_target_method_param', 'master_model_container', 'fold_shuffle_param', 'prep_pipe', 'transform_target_param', 'imputation_classifier', 'fold_groups_param_full', 'y_train', 'experiment__', 'pycaret_globals', 'seed', '_gpu_n_jobs_param', 'iterative_imputation_iters_param', 'html_param', 'exp_name_log', 'target_param', '_ml_usecase', 'imputation_regressor', 'y_test', 'fold_param', '_available_plots', 'X_test', 'y', '_all_models_internal', 'dashboard_logger', 'fix_imbalance_param', 'X_train', 'logging_param', 'display_container', 'data_before_preprocess', 'stratify_param'}
+2022-10-06 01:25:26,797:INFO:Preparing display monitor
+2022-10-06 01:25:26,801:INFO:Preparing display monitor
+2022-10-06 01:25:26,839:INFO:Importing libraries
+2022-10-06 01:25:26,840:INFO:Copying data for preprocessing
+2022-10-06 01:25:26,885:INFO:Declaring preprocessing parameters
+2022-10-06 01:25:26,951:INFO:Setting up iterative imputation
+2022-10-06 01:25:27,210:WARNING:Couldn't import xgboost.XGBClassifier
+2022-10-06 01:25:27,213:WARNING:Couldn't import catboost.CatBoostClassifier
+2022-10-06 01:25:27,612:WARNING:Couldn't import xgboost.XGBRegressor
+2022-10-06 01:25:27,614:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-06 01:25:27,615:INFO:Creating preprocessing pipeline
+2022-10-06 01:25:28,521:INFO:Preprocessing pipeline created successfully
+2022-10-06 01:25:28,521:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-10-06 01:25:28,522:INFO:Creating global containers
+2022-10-06 01:25:28,523:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2022-10-06 01:29:23,630:INFO:Iterative Imputation: 1 cycle | freight_value
+2022-10-06 01:33:14,178:INFO:PyCaret Supervised Module
+2022-10-06 01:33:14,179:INFO:ML Usecase: classification
+2022-10-06 01:33:14,179:INFO:version 2.3.10
+2022-10-06 01:33:14,179:INFO:Initializing setup()
+2022-10-06 01:33:14,179:INFO:setup(target=review_score, ml_usecase=classification, available_plots={'parameter': 'Hyperparameters', 'auc': 'AUC', 'confusion_matrix': 'Confusion Matrix', 'threshold': 'Threshold', 'pr': 'Precision Recall', 'error': 'Prediction Error', 'class_report': 'Class Report', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'calibration': 'Calibration Curve', 'vc': 'Validation Curve', 'dimension': 'Dimensions', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'boundary': 'Decision Boundary', 'lift': 'Lift Chart', 'gain': 'Gain Chart', 'tree': 'Decision Tree', 'ks': 'KS Statistic Plot'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=iterative, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=most_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=True, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=stratifiedkfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=42, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-10-06 01:33:14,200:INFO:Checking environment
+2022-10-06 01:33:14,200:INFO:python_version: 3.8.13
+2022-10-06 01:33:14,200:INFO:python_build: ('default', 'Mar 28 2022 06:59:08')
+2022-10-06 01:33:14,201:INFO:machine: AMD64
+2022-10-06 01:33:14,201:INFO:platform: Windows-10-10.0.19044-SP0
+2022-10-06 01:33:14,201:INFO:Memory: svmem(total=8470003712, available=1351680000, percent=84.0, used=7118323712, free=1351680000)
+2022-10-06 01:33:14,201:INFO:Physical Core: 2
+2022-10-06 01:33:14,202:INFO:Logical Core: 4
+2022-10-06 01:33:14,202:INFO:Checking libraries
+2022-10-06 01:33:14,202:INFO:pd==1.4.4
+2022-10-06 01:33:14,202:INFO:numpy==1.20.3
+2022-10-06 01:33:14,203:INFO:sklearn==0.23.2
+2022-10-06 01:33:14,203:INFO:lightgbm==3.3.2
+2022-10-06 01:33:14,205:WARNING:catboost not found
+2022-10-06 01:33:14,207:WARNING:xgboost not found
+2022-10-06 01:33:14,207:INFO:mlflow==1.29.0
+2022-10-06 01:33:14,207:INFO:Checking Exceptions
+2022-10-06 01:33:14,207:INFO:Declaring global variables
+2022-10-06 01:33:14,207:INFO:USI: 6c1e
+2022-10-06 01:33:14,208:INFO:pycaret_globals: {'fix_imbalance_method_param', 'fold_groups_param', 'gpu_param', '_internal_pipeline', 'n_jobs_param', 'USI', 'fold_generator', 'create_model_container', '_all_models', '_all_metrics', 'log_plots_param', 'X', 'transform_target_method_param', 'master_model_container', 'fold_shuffle_param', 'prep_pipe', 'transform_target_param', 'imputation_classifier', 'fold_groups_param_full', 'y_train', 'experiment__', 'pycaret_globals', 'seed', '_gpu_n_jobs_param', 'iterative_imputation_iters_param', 'html_param', 'exp_name_log', 'target_param', '_ml_usecase', 'imputation_regressor', 'y_test', 'fold_param', '_available_plots', 'X_test', 'y', '_all_models_internal', 'dashboard_logger', 'fix_imbalance_param', 'X_train', 'logging_param', 'display_container', 'data_before_preprocess', 'stratify_param'}
+2022-10-06 01:33:14,208:INFO:Preparing display monitor
+2022-10-06 01:33:14,208:INFO:Preparing display monitor
+2022-10-06 01:33:14,241:INFO:Importing libraries
+2022-10-06 01:33:14,241:INFO:Copying data for preprocessing
+2022-10-06 01:33:14,297:INFO:Declaring preprocessing parameters
+2022-10-06 01:33:14,373:INFO:Setting up iterative imputation
+2022-10-06 01:33:14,630:WARNING:Couldn't import xgboost.XGBClassifier
+2022-10-06 01:33:14,632:WARNING:Couldn't import catboost.CatBoostClassifier
+2022-10-06 01:33:15,014:WARNING:Couldn't import xgboost.XGBRegressor
+2022-10-06 01:33:15,016:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-06 01:33:15,017:INFO:Creating preprocessing pipeline
+2022-10-06 01:33:15,805:INFO:Preprocessing pipeline created successfully
+2022-10-06 01:33:15,806:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-10-06 01:33:15,806:INFO:Creating global containers
+2022-10-06 01:33:15,806:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2022-10-06 01:37:03,246:INFO:Iterative Imputation: 1 cycle | freight_value
