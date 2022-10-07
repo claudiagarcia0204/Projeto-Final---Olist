@@ -1,82 +1,157 @@
-# Projeto SharkAttack
-Status do projeto: ativo, em andamento
+# Análise de experiencia do cliente na Olist
+Status do projeto: ativo, concluido
 
-# Objetivo do projeto
-O projeto teve como objetivo apresentar técnicas de manipulação para ler um CSV, utilizando diferentes métodos de limpeza de dados no DataFrame. 
+# Descrição Olist - Plataforma de e-commerce
+"Conjunto de dados públicos de comércio eletrônico brasileiro por Olist O conjunto de dados tem informações de 100 mil pedidos de 2016 a 2018 feitos em vários marketplaces no Brasil.
+
+A Olist conecta pequenas empresas de todo o Brasil a canais sem complicações e com um único contrato. Esses comerciantes podem vender seus produtos através da Olist Store e enviá-los diretamente aos clientes usando os parceiros de logística da Olist.
+
+Depois que um cliente compra o produto da Olist Store, um vendedor é notificado para atender esse pedido. Assim que o cliente recebe o produto, ou vence a data prevista de entrega, o cliente recebe uma pesquisa de satisfação por e-mail onde pode dar uma nota da experiência de compra e anotar alguns comentários."
+
+# Fonte de dados
+Neste projeto, utilizamos dados compartilhados pela Olist - plataforma brasileira de e-commerce. 
+A base de dados pode ser acessada no Kaggle, em https://www.kaggle.com/olistbr/brazilian-ecommerce A base de dados completa conta com mais de 100 mil regitros de pedidos em 8 conjuntos de dados separados, sobre:
+
+Consumidores | Vendedores | Produtos | Pedidos | Categoria de pedidos | Avaliação de pedidos |Pagamentos Geolocalização
+Cada conjunto possui informações exclusivas sobre um assunto em questão, podendo ser cruzados de diversas maneiras a fim de se obter informações sobre o quesito escolhido. No caso deste trabalho, a abordagem será realizada com foco nos Consumidores.
+
+* O arquivo  `olist_customers_dataset.csv` contem os seguintes recursos:
+
+Feature | Description 
+----------|---------------
+**customer_id** | Id of the consumer who made the purchase.
+**customer_unique_id**    | Unique Id of the consumer.
+**customer_zip_code_prefix** | Zip Code of the location of the consumer.
+**customer_city** | Name of the City from where order is made.
+**customer_state** |  State Code from where order is made(Ex- sao paulo-SP).
+
+* The `olist_sellers_dataset.csv` contains following features:
+
+Feature | Description 
+----------|---------------
+**seller_id** |   Unique Id of the seller registered in olist.
+**seller_zip_code_prefix** | Zip Code of the location of the seller.
+**seller_city** | Name of the City of the seller.
+**seller_state** | State Code (Ex- sao paulo-SP)
+
+
+* The `olist_order_items_dataset.csv`  contain following features:
+
+Feature | Description 
+----------|---------------
+**order_id** | A unique id of order made by the consumers.
+**order_item_id** | A Unique id given to each item ordered in the order.
+**product_id** |A unique id given to each product available on the site.
+**seller_id** | Unique Id of the seller registered in olist.
+**shipping_limit_date** | The date before which shipping of the ordered    product must be completed.
+**price** | Actual price of the products ordered .
+**freight_value** | Price rate at which a product is delivered from one point to another. 
+
+* The `olist_order_payments_dataset.csv` contain following features:
+
+Feature | Description 
+----------|---------------
+**order_id** | A unique id of order made by the consumers.
+**payment_sequential** | sequences of the payments made in case of EMI.
+**payment_type** |  mode of payment used.(Ex-Credit Card)
+**payment_installments** | number of installments in case of EMI purchase.
+**payment_value** | Total amount paid for the purshase order.
+
+
+
+* The `olist_orders_dataset.csv`  contain following features:
+
+Feature | Description 
+----------|---------------
+**order_id** | A unique id of order made by the consumers.
+**customer_id** | Id of the consumer who made the purchase.
+**order_status** | status of the order made i.e delivered, shipped etc.
+**order_purchase_timestamp** | Timestamp of the purchase.
+**order_approved_at** | Timestamp of the order approval.
+**order_delivered_carrier_date** | delivery date at which carrier made the delivery.
+**order_delivered_customer_date** | date at which customer got the product.
+**order_estimated_delivery_date** | estimated delivery date of the products.
+
+
+* The `olist_order_reviews_dataset.csv`  contain following features:
+
+Feature | Description 
+----------|---------------
+**review_id** |Id of the review given on the product ordered by the order id.
+**order_id** |  A unique id of order made by the consumers.
+**review_score** | review score given by the customer for each order on the scale of 1–5. 
+**review_comment_title** | Title of the review
+**review_comment_message** | Review comments posted by the consumer for each order.
+**review_creation_date** |Timestamp of the review when it is created.
+**review_answer_timestamp** | Timestamp of the review answered.
+
+
+* The `olist_products_dataset.csv` contain following features:
+
+Feature | Description 
+----------|---------------
+**product_id** | A unique identifier for the proposed project.
+**product_category_name** | Name of the product category
+**product_name_lenght** | length of the string which specify the name given to the products ordered.
+**product_description_lenght** | length of the description written for each product ordered on the site.
+**product_photos_qty** | Number of photos of each product ordered available on the shopping portal.
+**product_weight_g** | Weight of the products ordered in grams.
+**product_length_cm** | Length of the products ordered in centimeters.
+**product_height_cm** | Height of the products ordered in centimeters.
+**product_width_cm** | width of the product ordered in centimeters.
+
 
 # Métodos
-Lista com métodos:
+Lista de métodos utilizados:
 
-Manipulação de dados
-Limpeza de dados
-Cálculos no DataFrame
-Filtrar
-Agrupamento
+Pandas – Manipulação e análise de dados
+NumPy – Manipulação de dados
+Seaborn - Visualização gráfica
+Matplotlib – Visualização gráfica
+Pycaret - Aprendizado de modelo
+Tableu - Visualização gráfica
 
 # Tecnologias
 Lista com tecnologias utilizadas:
 
+MySQL
+Tableu
 Python
-Pandas
-Regex
-Pd.loc
-Pd.pivot_table
-Pd.str.findall
-Pd.str.contains
-Pd.dropna
-Pd.expressões regulares
-Pd.numpy
-
 
 # Descrição do Projeto
-O projeto utilizou como base a tabela de incidentes de ataque de tubarão compilada pelo Arquivo Global de Ataque de Tubarão. Os dados foram baixados através do site do Global Shark Attack. 
-Os métodos utilizados, descritos acima, quis responder a questão sobre: Quais tipos de atividades levam homens e mulheres a sofrerem maiores números de ataques de tubarão.
+A missão de cada empresa é satisfazer seus clientes. Com uma plataforma de comércio eletrônico em que a compra dos clientes é afetada pelo feedback do produto e pelas classificações dos vendedores, manter um ciclo de feedback positivo é crucial para o retorno do cliente e o crescimento das vendas. Portanto, neste projeto, estamos interessados em prever as pontuações das avaliações dos clientes, para entender melhor a experiência dos clientes por meio da qualidade do produto, reputação dos vendedores e processo de envio. Isso ajudaria a empresa a continuar selecionando melhores produtos para oferecer em sua plataforma, recomendar vendedores mais confiáveis, melhorar a operação de entrega e, principalmente, projetar o atendimento ao cliente e campanhas de marketing eficazes para diferentes clientes-alvo. 
 
 
 ## Passos
-Com base no DataFrame inicial os dados totais foram de  25723 linhas / 24 colunas sendo que:
-* 488.276 dos dados (entre linhas e colunas) estavam apresentados como nulos
+* Leitura dos arquivos originais (csv)
+* Manipulação dos dados (limpeza, tratamento, manipulação)
+* Agrupamento de dados
+* Visualização dos dados agregados 
+* Análise de insights
+* Pré-processamento dos dados dividios em traino e teste utilizando a regressão para prever a probalilidade no conjunto de teste
+* Interpretação dos resultados da regressão 
+* Selecionar informações e respostas para elaboração da apresentação
 
-* Foram removidos aproximadamente 1/4 dos arquivos duplicados - Utilizando o .duplicated (numerador / denominador)
+## Considerações finais
 
-* As colunas que não estavam relacionadas diretamente a questão a ser respondida, foram removidas
+Através do modelo Regression entedemos a importancia de alguns parametros que podem influenciar no crescimento das vendas dos parceiros.
+A Olist pode continuar a expandir sua reputação para atrair novos clientes através:
 
-* O total de pessoas envolvidas nos acidentes por sexo (mem e women) inicialmente era de 6312. Após a limpeza de dados, considerando valores com dados ('N' e '.') foi atualizado por 6308 ('F' = 637 / 'M' = 5096)
+* Entrega do pedido antes ou até a data prevista
+* O vendedor precisa comparar o valor do seu produto para deixá-lo mais competitivo 
+* Preencher todos os campos com o máximo de detalhes do produto
+* Publicar maior número de fotos
+* Buscar o máximo de alternativas de transportadoras para reduzir o valor do frete
+* Responder no menor tempo possivel as dúvidas dos clientes
 
-* O total de Atividades envolvidas nos acidentes foi de 5733 distribuida em diversas subcategorias. Após a análise, para limitador de categorais, foram renomeados e listados apenas 9 categorias principais.
 
+Contato Claudia Garcia
+* linkedin: www.linkedin.com/in/ claudia-garcia0204
+* github: https://github.com/claudiagarcia0204
 
-
-## Conclusão
-Considerando os dados levantados pela coluna "Sexo" e "Atividades", foi possivel verificar em relação aos casos de acidentes:
-
-* Wading - 32,02 % dos acidentes aconteceram com pessoas que estavam 'Atravessando, passando' pelas praias, sendo: 67,79 % envolvem homens e 32,08 % envolve mulheres
-
-* Standing - 24,02 % dos acidentes aconteceram com pessoas que estavam 'Em pé na água', sendo: 75,81 % envolvem homens e 24,06 % envolve mulheres
-
-* Rowing - 22,73 % dos acidentes aconteceram com pessoas que estavam 'Remando' sendo: 76,19 % envolvem homens e 22,97 % envolve mulheres
-
-* Swimming - 16,49 % dos acidentes aconteceram com pessoas que estavam 'Nadando ', sendo: 83,49 % envolvem homens e 16,49 % envolve mulheres
-
-* Bathing - 11,89 % dos acidentes aconteceram com pessoas que estavam 'Banhando', sendo: 88,04 % envolvem homens e 11,89 % envolve mulheres
-
-* Surfing - 6,15 % dos acidentes aconteceram com pessoas que estavam 'Surfando', sendo: 93,84 % envolvem homens e 6,15 % envolve mulheres
-
-* Diving - 5,48 % dos acidentes aconteceram com pessoas que estavam 'Mergulhando', sendo: 94,50 % envolvem homens e 5,48 % envolve mulheres 
-
-* Fishing - 2,77 % dos acidentes aconteceram com pessoas que estavam 'Mergulhando', sendo: 97,21 % envolvem homens e 2,77 % envolve mulheres 
-
-* Other - 15,19 % dos acidentes aconteceram com pessoas que estavam 'Fazendo outras atividades', sendo: 84,79 % envolvem homens e 15,19 % envolve mulheres 
-
-## Conclusão final
-
-Em uma análise inicial, foi possível verificar que os homens, na totalidade dos acidentes , são mais propensos a acidentes com ataques de tubarões.
-
-A análise também apresentou informações que podem (a principio) demonstrar que atividades como Pesca; Mergulho; Surf detém uma diferença significativa com relação a porcentagem (94%, 89%, 87% maior que os incidentes com mulheres na mesma atividade), mostrando a predominância masculina nesta atividade.
+Contato Paulo Choi
+* linkedin: linkedin.com/in/paulo-choi-69180a247/
+* github: https://github.com/tchepaulo
 
 
 
-
-Contato
-linkedin: linkedin.com/in/claudia-garcia-765b5037
-github: @claudiagarcia0204
