@@ -172,5 +172,10 @@ Contato Paulo Choi
 * linkedin: linkedin.com/in/paulo-choi-69180a247/
 * github: https://github.com/tchepaulo
 
+![GitHub top language](https://img.shields.io/github/languages/top/claudiagarcia0204/Projeto-Final---Olist)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/claudiagarcia0204/Projeto-Final---Olist)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/claudiagarcia0204/Projeto-Final---Olist)
+![GitHub last commit](https://img.shields.io/github/last-commit/claudiagarcia0204/Projeto-Final---Olist)
+
 
 
