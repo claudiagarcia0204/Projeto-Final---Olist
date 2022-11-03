@@ -143,7 +143,7 @@ ___
 * Agrupamento de dados
 * Visualização dos dados agregados 
 * Análise de insights
-* Pré-processamento dos dados dividios em traino e teste utilizando a regressão para prever a probalilidade no conjunto de teste
+* Pré-processamento dos dados utilizando a regressão para prever a probalilidade no conjunto de teste
 * Interpretação dos resultados da regressão 
 * Selecionar informações e respostas para elaboração da apresentação
 
