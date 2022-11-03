@@ -2,8 +2,7 @@
 <br/>
 <br/>
 <br/>
-# Análise de variáveis que tem maior relação com quantidade de vendas
-Status do projeto: ativo, concluido
+Status do projeto: ativo, em andamento
 
 # Descrição Olist - Plataforma de e-commerce
 "Conjunto de dados públicos de comércio eletrônico brasileiro por Olist O conjunto de dados tem informações de 100 mil pedidos de 2016 a 2018 feitos em vários marketplaces no Brasil.
