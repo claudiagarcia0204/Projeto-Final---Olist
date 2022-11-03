@@ -11,6 +11,7 @@ Status do projeto: ativo, em andamento
 A Olist conecta pequenas empresas de todo o Brasil a canais sem complicações e com um único contrato. Esses comerciantes podem vender seus produtos através da Olist Store e enviá-los diretamente aos clientes usando os parceiros de logística da Olist.
 
 Depois que um cliente compra o produto da Olist Store, um vendedor é notificado para atender esse pedido. Assim que o cliente recebe o produto, ou vence a data prevista de entrega, o cliente recebe uma pesquisa de satisfação por e-mail onde pode dar uma nota da experiência de compra e anotar alguns comentários."
+"___"
 
 # Fonte de dados
 Neste projeto, utilizamos dados compartilhados pela Olist - plataforma brasileira de e-commerce. 
@@ -114,6 +115,7 @@ Seaborn - Visualização gráfica
 Matplotlib – Visualização gráfica
 Pycaret - Aprendizado de modelo
 Tableu - Visualização gráfica
+"___"
 
 # Tecnologias
 Lista com tecnologias utilizadas:
@@ -121,10 +123,11 @@ Lista com tecnologias utilizadas:
 MySQL
 Tableu
 Python
+"___"
 
 # Descrição do Projeto
 A missão de cada empresa é satisfazer seus clientes. Com uma plataforma de comércio eletrônico em que a compra dos clientes é afetada pelo feedback do produto e pelas classificações dos vendedores, manter um ciclo de feedback positivo é crucial para o retorno do cliente e o crescimento das vendas. Portanto, neste projeto, estamos interessados em prever as pontuações das avaliações dos clientes, para entender melhor a experiência dos clientes por meio da qualidade do produto, reputação dos vendedores e processo de envio. Isso ajudaria a empresa a continuar selecionando melhores produtos para oferecer em sua plataforma, recomendar vendedores mais confiáveis, melhorar a operação de entrega e, principalmente, projetar o atendimento ao cliente e campanhas de marketing eficazes para diferentes clientes-alvo. 
-
+"___"
 
 ## Passos
 * Leitura dos arquivos originais (csv)
@@ -135,9 +138,9 @@ A missão de cada empresa é satisfazer seus clientes. Com uma plataforma de com
 * Pré-processamento dos dados dividios em traino e teste utilizando a regressão para prever a probalilidade no conjunto de teste
 * Interpretação dos resultados da regressão 
 * Selecionar informações e respostas para elaboração da apresentação
+"___"
 
 ## Considerações finais
-
 
 <img src="Apresentação e imagens/Variable_importance.png" align="center" width="100%"/>
 <br/>
@@ -159,6 +162,7 @@ A Olist pode continuar a expandir sua reputação para atrair novos clientes atr
 
 Uma das tarefas mais importantes do projeto é identificar clientes satisfeitos. Clientes satisfeitos são mais propensos a voltar. Este é o grupo de clientes que a estratégia de marketing da Olist pode atingir, para obter melhores resultados com menos recursos. A empresa também pode estudar o hábito de clientes satisfeitos, as categorias de produtos e vendedores mais populares ​​para melhorar seu sistema de recomendação.
 <br/>
+"___"
 
 Contato Claudia Garcia
 * linkedin: www.linkedin.com/in/ claudia-garcia0204
