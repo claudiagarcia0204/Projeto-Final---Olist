@@ -1,9 +1,10 @@
-<img src="Apresentação e imagens/olist.jpg" align="left" width="30%"/>
+<img src="Apresentação e imagens/olist.jpg" align="left" width="20%"/>
 <br/>
-<br/>
-<br/>
-Status do Projeto: Concluido :heavy_check_mark:
 
+
+Status do Projeto: Concluido :heavy_check_mark:
+<br/>
+<br/>
 
 ___
 ![GitHub top language](https://img.shields.io/github/languages/top/claudiagarcia0204/Projeto-Final---Olist)
