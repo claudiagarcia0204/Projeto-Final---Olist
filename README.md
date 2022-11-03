@@ -1,3 +1,4 @@
+<img src="Apresentação e imagens/olist.jpg" align="right" width="50%"/>
 # Análise de variáveis que tem maior relação com quantidade de vendas
 Status do projeto: ativo, concluido
 
