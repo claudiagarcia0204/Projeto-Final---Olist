@@ -108,20 +108,20 @@ ___
 # Métodos
 Lista de métodos utilizados:
 
-Pandas – Manipulação e análise de dados
-NumPy – Manipulação de dados
-Seaborn - Visualização gráfica
-Matplotlib – Visualização gráfica
-Pycaret - Aprendizado de modelo
-Tableu - Visualização gráfica
+* Pandas – Manipulação e análise de dados
+* NumPy – Manipulação de dados
+* Seaborn - Visualização gráfica
+* Matplotlib – Visualização gráfica
+* Pycaret - Aprendizado de modelo
+* Tableu - Visualização gráfica
 
 ___
 # Tecnologias
 Lista com tecnologias utilizadas:
 
-MySQL
-Tableu
-Python
+* MySQL
+* Tableu
+* Python
 
 ___
 # Descrição do Projeto
