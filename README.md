@@ -148,6 +148,9 @@ A Olist pode continuar a expandir sua reputação para atrair novos clientes atr
 * Buscar o máximo de alternativas de transportadoras para reduzir o valor do frete
 * Responder no menor tempo possivel as dúvidas dos clientes
 
+<img src="Apresentação e imagens/Variable_importance.png" align="center" width="100%"/>
+<br/>
+<br/>
 
 Contato Claudia Garcia
 * linkedin: www.linkedin.com/in/ claudia-garcia0204

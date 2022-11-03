@@ -4706,3 +4706,72 @@ OSError: [Errno 22] Invalid argument
 2022-11-03 09:35:35,124:INFO:Checking exceptions
 2022-11-03 09:35:35,125:INFO:Preloading libraries
 2022-11-03 09:35:35,125:INFO:Preparing display monitor
+2022-11-03 15:03:42,539:INFO:Initializing create_model()
+2022-11-03 15:03:42,684:INFO:create_model(estimator=rf, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, verbose=True, system=True, metrics=None, experiment_custom_tags=None, add_to_model_list=True, probability_threshold=None, display=None, return_train_score=False, kwargs={})
+2022-11-03 15:03:42,684:INFO:Checking exceptions
+2022-11-03 15:03:43,190:INFO:Preparing display monitor
+2022-11-03 15:03:44,784:INFO:Importing libraries
+2022-11-03 15:03:44,797:INFO:Copying training dataset
+2022-11-03 15:03:45,337:INFO:Defining folds
+2022-11-03 15:03:45,338:INFO:Declaring metric variables
+2022-11-03 15:03:45,367:INFO:Importing untrained model
+2022-11-03 15:03:45,703:INFO:Random Forest Regressor Imported succesfully
+2022-11-03 15:03:45,853:INFO:Starting cross validation
+2022-11-03 15:03:45,939:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-3
+2022-11-03 15:13:18,813:INFO:Calculating mean and std
+2022-11-03 15:13:18,896:INFO:Creating metrics dataframe
+2022-11-03 15:13:19,091:INFO:Finalizing model
+2022-11-03 15:14:55,973:INFO:Uploading results into container
+2022-11-03 15:14:55,974:INFO:Uploading model into container now
+2022-11-03 15:14:56,763:INFO:create_model_container: 19
+2022-11-03 15:14:56,763:INFO:master_model_container: 19
+2022-11-03 15:14:56,764:INFO:display_container: 4
+2022-11-03 15:14:56,791:INFO:RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='auto', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=-3, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False)
+2022-11-03 15:14:56,792:INFO:create_model() succesfully completed......................................
+2022-11-03 15:18:07,121:INFO:Initializing evaluate_model()
+2022-11-03 15:18:07,123:INFO:evaluate_model(estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='auto', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=-3, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None, use_train_data=False)
+2022-11-03 15:18:07,224:INFO:Initializing plot_model()
+2022-11-03 15:18:07,225:INFO:plot_model(fold=KFold(n_splits=10, random_state=None, shuffle=False), use_train_data=False, verbose=True, is_in_evaluate=True, display=None, display_format=None, estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='auto', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=-3, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot=parameter, plot_kwargs={}, save=False, scale=1, system=True)
+2022-11-03 15:18:07,228:INFO:Checking exceptions
+2022-11-03 15:18:07,376:INFO:Preparing display monitor
+2022-11-03 15:18:07,438:INFO:Preloading libraries
+2022-11-03 15:18:08,161:INFO:Copying training dataset
+2022-11-03 15:18:08,183:INFO:Copying test dataset
+2022-11-03 15:18:08,300:INFO:Plot type: parameter
+2022-11-03 15:18:08,497:INFO:Visual Rendered Successfully
+2022-11-03 15:18:08,799:INFO:plot_model() succesfully completed......................................
+2022-11-03 15:18:16,720:INFO:Initializing plot_model()
+2022-11-03 15:18:16,720:INFO:plot_model(fold=KFold(n_splits=10, random_state=None, shuffle=False), use_train_data=False, verbose=True, is_in_evaluate=True, display=None, display_format=None, estimator=RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='auto', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=100, n_jobs=-3, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot=feature, plot_kwargs={}, save=False, scale=1, system=True)
+2022-11-03 15:18:16,721:INFO:Checking exceptions
+2022-11-03 15:18:16,852:INFO:Preparing display monitor
+2022-11-03 15:18:16,882:INFO:Preloading libraries
+2022-11-03 15:18:17,124:INFO:Copying training dataset
+2022-11-03 15:18:17,146:INFO:Copying test dataset
+2022-11-03 15:18:17,155:INFO:Plot type: feature
+2022-11-03 15:18:17,343:WARNING:No coef_ found. Trying feature_importances_
+2022-11-03 15:18:18,758:INFO:Visual Rendered Successfully
+2022-11-03 15:18:19,173:INFO:plot_model() succesfully completed......................................
