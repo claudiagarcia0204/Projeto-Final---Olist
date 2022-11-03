@@ -115,7 +115,7 @@ Seaborn - Visualização gráfica
 Matplotlib – Visualização gráfica
 Pycaret - Aprendizado de modelo
 Tableu - Visualização gráfica
-"___"
+
 
 # Tecnologias
 Lista com tecnologias utilizadas:
@@ -123,7 +123,6 @@ Lista com tecnologias utilizadas:
 MySQL
 Tableu
 Python
-"___"
 
 # Descrição do Projeto
 A missão de cada empresa é satisfazer seus clientes. Com uma plataforma de comércio eletrônico em que a compra dos clientes é afetada pelo feedback do produto e pelas classificações dos vendedores, manter um ciclo de feedback positivo é crucial para o retorno do cliente e o crescimento das vendas. Portanto, neste projeto, estamos interessados em prever as pontuações das avaliações dos clientes, para entender melhor a experiência dos clientes por meio da qualidade do produto, reputação dos vendedores e processo de envio. Isso ajudaria a empresa a continuar selecionando melhores produtos para oferecer em sua plataforma, recomendar vendedores mais confiáveis, melhorar a operação de entrega e, principalmente, projetar o atendimento ao cliente e campanhas de marketing eficazes para diferentes clientes-alvo. 
