@@ -138,10 +138,10 @@ A missão de cada empresa é satisfazer seus clientes. Com uma plataforma de com
 * Pré-processamento dos dados dividios em traino e teste utilizando a regressão para prever a probalilidade no conjunto de teste
 * Interpretação dos resultados da regressão 
 * Selecionar informações e respostas para elaboração da apresentação
+
 "___"
 
 ## Considerações finais
-
 <img src="Apresentação e imagens/Variable_importance.png" align="center" width="100%"/>
 <br/>
 O recurso com maior efeito é relativo ao processo de entrega: erro_estimativa_dias_entrega. Isso torna-se notável com uma de nossas primeiras hipóteses sobre o efeito do tempo de envio na satisfação do cliente. Quando o tempo de entrega real é maior do que o esperado (erro de estimativa > 0), o número de avaliações insatisfeitas aumenta, ou seja, entregas longas e atrasadas descontentam os clientes.
@@ -162,6 +162,7 @@ A Olist pode continuar a expandir sua reputação para atrair novos clientes atr
 
 Uma das tarefas mais importantes do projeto é identificar clientes satisfeitos. Clientes satisfeitos são mais propensos a voltar. Este é o grupo de clientes que a estratégia de marketing da Olist pode atingir, para obter melhores resultados com menos recursos. A empresa também pode estudar o hábito de clientes satisfeitos, as categorias de produtos e vendedores mais populares ​​para melhorar seu sistema de recomendação.
 <br/>
+
 "___"
 
 Contato Claudia Garcia
