@@ -138,7 +138,16 @@ A missão de cada empresa é satisfazer seus clientes. Com uma plataforma de com
 
 ## Considerações finais
 
-Através do modelo Regression entedemos a importancia de alguns parametros que podem influenciar no crescimento das vendas dos parceiros.
+
+<img src="Apresentação e imagens/Variable_importance.png" align="center" width="100%"/>
+<br/>
+O recurso com maior efeito é relativo ao processo de entrega: erro_estimativa_dias_entrega. Isso torna-se notável com uma de nossas primeiras hipóteses sobre o efeito do tempo de envio na satisfação do cliente. Quando o tempo de entrega real é maior do que o esperado (erro de estimativa > 0), o número de avaliações insatisfeitas aumenta, ou seja, entregas longas e atrasadas descontentam os clientes.
+
+A Olist atua como uma plataforma de e-commerce conectando vendedores e compradores online, ao mesmo tempo em que fornece serviços logísticos, que inclusive foi o terceiro recurso com maior efeito. Garantir excelencia nos serviços de envio é um dos fatores fundamentais para atrair e manter vendedores e clientes.
+
+A entrega dos produtos é processada através de várias etapas, portanto, é conduzido por vários fatores, como gerenciamento de estoque, velocidade de manuseio de pedidos e transporte. Sem muitas informações sobre a operação interna da Olist, nossa sugestão é que a empresa acompanhe efetivamente as etapas de envio para obter um tempo estimado de entrega mais preciso, ao mesmo tempo em que detecta procedimentos ineficientes para melhorar o desempenho geral do envio.
+
+Através do modelo Regression entendemos a importancia de alguns parametros que podem influenciar no crescimento das vendas dos parceiros.
 A Olist pode continuar a expandir sua reputação para atrair novos clientes através:
 
 * Entrega do pedido antes ou até a data prevista
@@ -148,8 +157,7 @@ A Olist pode continuar a expandir sua reputação para atrair novos clientes atr
 * Buscar o máximo de alternativas de transportadoras para reduzir o valor do frete
 * Responder no menor tempo possivel as dúvidas dos clientes
 
-<img src="Apresentação e imagens/Variable_importance.png" align="center" width="100%"/>
-<br/>
+Uma das tarefas mais importantes do projeto é identificar clientes satisfeitos. Clientes satisfeitos são mais propensos a voltar. Este é o grupo de clientes que a estratégia de marketing da Olist pode atingir, para obter melhores resultados com menos recursos. A empresa também pode estudar o hábito de clientes satisfeitos, as categorias de produtos e vendedores mais populares ​​para melhorar seu sistema de recomendação.
 <br/>
 
 Contato Claudia Garcia
