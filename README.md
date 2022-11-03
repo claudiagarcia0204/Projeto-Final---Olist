@@ -5,16 +5,14 @@
 Status do projeto: ativo, em andamento
 
 # Descrição Olist - Plataforma de e-commerce
-___
 "Conjunto de dados públicos de comércio eletrônico brasileiro por Olist O conjunto de dados tem informações de 100 mil pedidos de 2016 a 2018 feitos em vários marketplaces no Brasil.
 
 A Olist conecta pequenas empresas de todo o Brasil a canais sem complicações e com um único contrato. Esses comerciantes podem vender seus produtos através da Olist Store e enviá-los diretamente aos clientes usando os parceiros de logística da Olist.
 
 Depois que um cliente compra o produto da Olist Store, um vendedor é notificado para atender esse pedido. Assim que o cliente recebe o produto, ou vence a data prevista de entrega, o cliente recebe uma pesquisa de satisfação por e-mail onde pode dar uma nota da experiência de compra e anotar alguns comentários."
 
-
-# Fonte de dados
 ___
+# Fonte de dados
 Neste projeto, utilizamos dados compartilhados pela Olist - plataforma brasileira de e-commerce. 
 A base de dados pode ser acessada no Kaggle, em https://www.kaggle.com/olistbr/brazilian-ecommerce A base de dados completa conta com mais de 100 mil regitros de pedidos em 8 conjuntos de dados separados, sobre:
 
@@ -106,9 +104,8 @@ Feature | Description
 **product_height_cm** | Height of the products ordered in centimeters.
 **product_width_cm** | width of the product ordered in centimeters.
 
-
-# Métodos
 ___
+# Métodos
 Lista de métodos utilizados:
 
 Pandas – Manipulação e análise de dados
@@ -118,22 +115,20 @@ Matplotlib – Visualização gráfica
 Pycaret - Aprendizado de modelo
 Tableu - Visualização gráfica
 
-
-# Tecnologias
 ___
+# Tecnologias
 Lista com tecnologias utilizadas:
 
 MySQL
 Tableu
 Python
 
-# Descrição do Projeto
 ___
+# Descrição do Projeto
 A missão de cada empresa é satisfazer seus clientes. Com uma plataforma de comércio eletrônico em que a compra dos clientes é afetada pelo feedback do produto e pelas classificações dos vendedores, manter um ciclo de feedback positivo é crucial para o retorno do cliente e o crescimento das vendas. Portanto, neste projeto, estamos interessados em prever as pontuações das avaliações dos clientes, para entender melhor a experiência dos clientes por meio da qualidade do produto, reputação dos vendedores e processo de envio. Isso ajudaria a empresa a continuar selecionando melhores produtos para oferecer em sua plataforma, recomendar vendedores mais confiáveis, melhorar a operação de entrega e, principalmente, projetar o atendimento ao cliente e campanhas de marketing eficazes para diferentes clientes-alvo. 
 
-
-## Passos
 ___
+## Passos
 * Leitura dos arquivos originais (csv)
 * Manipulação dos dados (limpeza, tratamento, manipulação)
 * Agrupamento de dados
@@ -143,9 +138,8 @@ ___
 * Interpretação dos resultados da regressão 
 * Selecionar informações e respostas para elaboração da apresentação
 
-
-## Considerações finais
 ___
+## Considerações finais
 <img src="Apresentação e imagens/Variable_importance.png" align="center" width="100%"/>
 <br/>
 O recurso com maior efeito é relativo ao processo de entrega: erro_estimativa_dias_entrega. Isso torna-se notável com uma de nossas primeiras hipóteses sobre o efeito do tempo de envio na satisfação do cliente. Quando o tempo de entrega real é maior do que o esperado (erro de estimativa > 0), o número de avaliações insatisfeitas aumenta, ou seja, entregas longas e atrasadas descontentam os clientes.
