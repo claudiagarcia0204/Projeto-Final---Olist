@@ -2,7 +2,7 @@
 <br/>
 <br/>
 <br/>
-Status do projeto: ativo, em andamento
+Status do Projeto: Concluido :heavy_check_mark:
 
 # Descrição Olist - Plataforma de e-commerce
 "Conjunto de dados públicos de comércio eletrônico brasileiro por Olist O conjunto de dados tem informações de 100 mil pedidos de 2016 a 2018 feitos em vários marketplaces no Brasil.
