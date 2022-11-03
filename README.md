@@ -3,6 +3,10 @@
 <br/>
 <br/>
 Status do Projeto: Concluido :heavy_check_mark:
+![GitHub top language](https://img.shields.io/github/languages/top/claudiagarcia0204/Projeto-Final---Olist)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/claudiagarcia0204/Projeto-Final---Olist)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/claudiagarcia0204/Projeto-Final---Olist)
+![GitHub last commit](https://img.shields.io/github/last-commit/claudiagarcia0204/Projeto-Final---Olist)
 
 # Descrição Olist - Plataforma de e-commerce
 "Conjunto de dados públicos de comércio eletrônico brasileiro por Olist O conjunto de dados tem informações de 100 mil pedidos de 2016 a 2018 feitos em vários marketplaces no Brasil.
@@ -171,10 +175,6 @@ Contato Paulo Choi
 * linkedin: linkedin.com/in/paulo-choi-69180a247/
 * github: https://github.com/tchepaulo
 
-![GitHub top language](https://img.shields.io/github/languages/top/claudiagarcia0204/Projeto-Final---Olist)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/claudiagarcia0204/Projeto-Final---Olist)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/claudiagarcia0204/Projeto-Final---Olist)
-![GitHub last commit](https://img.shields.io/github/last-commit/claudiagarcia0204/Projeto-Final---Olist)
 
 
 
